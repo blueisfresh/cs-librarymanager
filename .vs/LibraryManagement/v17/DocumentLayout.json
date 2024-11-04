@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|c:\\users\\elias\\desktop\\zweite blockwoche\\librarymanagement\\librarymanagement\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\librarymanagement\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -42,8 +42,7 @@
               "RelativeToolTip": "LibraryManagement\\MainWindow.xaml.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T12:53:16.475Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T12:53:16.475Z"
             },
             {
               "$type": "Bookmark",
