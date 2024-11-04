@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{67867A69-F824-415A-BCF7-F53D865C5D65}|LibraryManagementSystem.Tests\\LibraryManagementSystem.Tests.csproj|c:\\users\\elias\\desktop\\zweite blockwoche\\librarymanagement\\librarymanagementsystem.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67867A69-F824-415A-BCF7-F53D865C5D65}|LibraryManagementSystem.Tests\\LibraryManagementSystem.Tests.csproj|solutionrelative:librarymanagementsystem.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F84B97BD-8AAC-4736-B0BA-64DE60F0E83D}|LibraryManagementSystem\\LibraryManagementSystem.csproj|c:\\users\\elias\\desktop\\zweite blockwoche\\librarymanagement\\librarymanagementsystem\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F84B97BD-8AAC-4736-B0BA-64DE60F0E83D}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|c:\\users\\elias\\desktop\\zweite blockwoche\\librarymanagement\\librarymanagement\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -23,6 +31,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagementSystem.Tests\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem.Tests\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagementSystem.Tests\\UnitTest1.cs",
+              "RelativeToolTip": "LibraryManagementSystem.Tests\\UnitTest1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T13:31:02.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagementSystem\\Class1.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Class1.cs",
+              "ToolTip": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagementSystem\\Class1.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\Class1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T13:28:30.851Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\MainWindow.xaml",
               "RelativeDocumentMoniker": "LibraryManagement\\MainWindow.xaml",
@@ -34,7 +68,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "LibraryManagement\\MainWindow.xaml.cs",
