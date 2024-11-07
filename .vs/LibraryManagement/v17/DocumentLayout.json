@@ -3,23 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\librarymanagement\\views\\statisticspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\views\\statisticspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\librarymanagement\\views\\statisticspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\views\\statisticspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\librarymanagement\\viewmodels\\statisticsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\viewmodels\\statisticsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F84B97BD-8AAC-4736-B0BA-64DE60F0E83D}|LibraryManagementSystem\\LibraryManagementSystem.csproj|C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\librarymanagementsystem\\data\\borrowrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F84B97BD-8AAC-4736-B0BA-64DE60F0E83D}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\data\\borrowrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|c:\\users\\elias\\desktop\\zweite blockwoche\\librarymanagement\\librarymanagement\\viewmodels\\borrowreturnviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F84B97BD-8AAC-4736-B0BA-64DE60F0E83D}|LibraryManagementSystem\\LibraryManagementSystem.csproj|C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\librarymanagementsystem\\data\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F84B97BD-8AAC-4736-B0BA-64DE60F0E83D}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\data\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F84B97BD-8AAC-4736-B0BA-64DE60F0E83D}|LibraryManagementSystem\\LibraryManagementSystem.csproj|C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\librarymanagementsystem\\data\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F84B97BD-8AAC-4736-B0BA-64DE60F0E83D}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\data\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\librarymanagement\\viewmodels\\borrowreturnviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\viewmodels\\borrowreturnviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -27,16 +23,68 @@
       "RelativeMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\views\\borrowreturnpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|c:\\users\\elias\\desktop\\zweite blockwoche\\librarymanagement\\librarymanagement\\viewmodels\\importexportviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\viewmodels\\importexportviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\librarymanagement\\viewmodels\\addbooksviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\viewmodels\\addbooksviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\librarymanagement\\views\\addbookswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\views\\addbookswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\librarymanagement\\viewmodels\\booksviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\viewmodels\\booksviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67867A69-F824-415A-BCF7-F53D865C5D65}|LibraryManagementSystem.Tests\\LibraryManagementSystem.Tests.csproj|C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\librarymanagementsystem.tests\\bookrepositorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67867A69-F824-415A-BCF7-F53D865C5D65}|LibraryManagementSystem.Tests\\LibraryManagementSystem.Tests.csproj|solutionrelative:librarymanagementsystem.tests\\bookrepositorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F84B97BD-8AAC-4736-B0BA-64DE60F0E83D}|LibraryManagementSystem\\LibraryManagementSystem.csproj|C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\librarymanagementsystem\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F84B97BD-8AAC-4736-B0BA-64DE60F0E83D}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F84B97BD-8AAC-4736-B0BA-64DE60F0E83D}|LibraryManagementSystem\\LibraryManagementSystem.csproj|C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\librarymanagementsystem\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F84B97BD-8AAC-4736-B0BA-64DE60F0E83D}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F84B97BD-8AAC-4736-B0BA-64DE60F0E83D}|LibraryManagementSystem\\LibraryManagementSystem.csproj|C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\librarymanagementsystem\\models\\borrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F84B97BD-8AAC-4736-B0BA-64DE60F0E83D}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\models\\borrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\librarymanagement\\views\\bookspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\views\\bookspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\librarymanagement\\views\\bookspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\views\\bookspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|c:\\users\\elias\\desktop\\zweite blockwoche\\librarymanagement\\librarymanagement\\views\\statisticspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\views\\statisticspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\librarymanagement\\viewmodels\\statisticsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\viewmodels\\statisticsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\librarymanagement\\components\\navigationcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\components\\navigationcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\librarymanagement\\components\\navigationcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\components\\navigationcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\librarymanagement\\components\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\components\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F84B97BD-8AAC-4736-B0BA-64DE60F0E83D}|LibraryManagementSystem\\LibraryManagementSystem.csproj|C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\librarymanagementsystem\\data\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F84B97BD-8AAC-4736-B0BA-64DE60F0E83D}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\data\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\librarymanagement\\views\\statisticspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\views\\statisticspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\librarymanagement\\viewmodels\\importexportviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\viewmodels\\importexportviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\librarymanagement\\viewmodels\\borrowedbooksviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -51,28 +99,12 @@
       "RelativeMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\views\\importexportpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F84B97BD-8AAC-4736-B0BA-64DE60F0E83D}|LibraryManagementSystem\\LibraryManagementSystem.csproj|C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\librarymanagementsystem\\data\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F84B97BD-8AAC-4736-B0BA-64DE60F0E83D}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\data\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\librarymanagement\\views\\borrowedbookspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\views\\borrowedbookspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\librarymanagement\\views\\borrowedbookspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\views\\borrowedbookspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F84B97BD-8AAC-4736-B0BA-64DE60F0E83D}|LibraryManagementSystem\\LibraryManagementSystem.csproj|C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\librarymanagementsystem\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F84B97BD-8AAC-4736-B0BA-64DE60F0E83D}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F84B97BD-8AAC-4736-B0BA-64DE60F0E83D}|LibraryManagementSystem\\LibraryManagementSystem.csproj|C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\librarymanagementsystem\\models\\borrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F84B97BD-8AAC-4736-B0BA-64DE60F0E83D}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\models\\borrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\librarymanagement\\viewmodels\\booksviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\viewmodels\\booksviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\librarymanagement\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -95,14 +127,6 @@
       "RelativeMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\views\\studentspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\librarymanagement\\views\\bookspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\views\\bookspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\librarymanagement\\views\\bookspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\views\\bookspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\librarymanagement\\views\\addstudentwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\views\\addstudentwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -117,18 +141,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\librarymanagement\\views\\addbookswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\views\\addbookswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\librarymanagement\\views\\addbookswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\views\\addbookswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\librarymanagement\\viewmodels\\addbooksviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\viewmodels\\addbooksviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67867A69-F824-415A-BCF7-F53D865C5D65}|LibraryManagementSystem.Tests\\LibraryManagementSystem.Tests.csproj|C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\librarymanagementsystem.tests\\bookrepositorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67867A69-F824-415A-BCF7-F53D865C5D65}|LibraryManagementSystem.Tests\\LibraryManagementSystem.Tests.csproj|solutionrelative:librarymanagementsystem.tests\\bookrepositorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{67867A69-F824-415A-BCF7-F53D865C5D65}|LibraryManagementSystem.Tests\\LibraryManagementSystem.Tests.csproj|C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\librarymanagementsystem.tests\\borrowrepositorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -155,14 +167,6 @@
       "RelativeMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\librarymanagement\\components\\navigationcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\components\\navigationcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\librarymanagement\\components\\navigationcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\components\\navigationcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\elias\\AppData\\Local\\Temp\\.vsdbgsrc\\6b2dfb9d5e4949b718ee78fa9415cabf37518e9447a2764ba224d240518b710f\\ResourcePart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -179,10 +183,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\librarymanagement\\librarymanagement.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{5D41B367-AD99-4B6E-90F1-79CF5354DC69}|LibraryManagement\\LibraryManagement.csproj|solutionrelative:librarymanagement\\librarymanagement.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F84B97BD-8AAC-4736-B0BA-64DE60F0E83D}|LibraryManagementSystem\\LibraryManagementSystem.csproj|C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\librarymanagementsystem\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F84B97BD-8AAC-4736-B0BA-64DE60F0E83D}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -192,17 +192,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 32,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 7,
               "Title": "BooksViewModel.cs",
               "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\ViewModels\\BooksViewModel.cs",
               "RelativeDocumentMoniker": "LibraryManagement\\ViewModels\\BooksViewModel.cs",
               "ToolTip": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\ViewModels\\BooksViewModel.cs",
               "RelativeToolTip": "LibraryManagement\\ViewModels\\BooksViewModel.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAiwCQAAAAMAAAA",
+              "ViewState": "AQIAABoAAAAAAAAAAADwv2QAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T13:30:44.745Z",
               "IsPinned": true,
@@ -210,7 +210,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 28,
               "Title": "StudentsViewModel.cs",
               "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\ViewModels\\StudentsViewModel.cs",
               "RelativeDocumentMoniker": "LibraryManagement\\ViewModels\\StudentsViewModel.cs",
@@ -219,101 +219,24 @@
               "ViewState": "AQIAAAMAAAAAAAAAAAAowCcAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T13:31:08.357Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ImportExportViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\ViewModels\\ImportExportViewModel.cs",
-              "RelativeDocumentMoniker": "LibraryManagement\\ViewModels\\ImportExportViewModel.cs",
-              "ToolTip": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\ViewModels\\ImportExportViewModel.cs",
-              "RelativeToolTip": "LibraryManagement\\ViewModels\\ImportExportViewModel.cs",
-              "ViewState": "AQIAAGkAAAAAAAAAAAAWwG8AAAAYAAAA",
+              "DocumentIndex": 2,
+              "Title": "StudentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagementSystem\\Data\\StudentRepository.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Data\\StudentRepository.cs",
+              "ToolTip": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagementSystem\\Data\\StudentRepository.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\Data\\StudentRepository.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAwwC8AAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T12:42:22.17Z",
+              "WhenOpened": "2024-11-06T09:18:28.961Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BorrowReturnViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\ViewModels\\BorrowReturnViewModel.cs",
-              "RelativeDocumentMoniker": "LibraryManagement\\ViewModels\\BorrowReturnViewModel.cs",
-              "ToolTip": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\ViewModels\\BorrowReturnViewModel.cs",
-              "RelativeToolTip": "LibraryManagement\\ViewModels\\BorrowReturnViewModel.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABkAAABWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T13:31:38.065Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BorrowRepository.cs",
-              "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagementSystem\\Data\\BorrowRepository.cs",
-              "RelativeDocumentMoniker": "LibraryManagementSystem\\Data\\BorrowRepository.cs",
-              "ToolTip": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagementSystem\\Data\\BorrowRepository.cs",
-              "RelativeToolTip": "LibraryManagementSystem\\Data\\BorrowRepository.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAIwC4AAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T09:18:03.847Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "LibraryManagement\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\MainWindow.xaml",
-              "RelativeToolTip": "LibraryManagement\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-04T12:53:18.293Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "LibraryManagement\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\MainWindow.xaml.cs",
-              "RelativeToolTip": "LibraryManagement\\MainWindow.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAADwvw4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T12:53:16.475Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "DeleteBookWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\Views\\DeleteBookWindow.xaml.cs",
-              "RelativeDocumentMoniker": "LibraryManagement\\Views\\DeleteBookWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\Views\\DeleteBookWindow.xaml.cs",
-              "RelativeToolTip": "LibraryManagement\\Views\\DeleteBookWindow.xaml.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAA8wBIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T10:17:28.44Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "DeleteBookWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\Views\\DeleteBookWindow.xaml",
-              "RelativeDocumentMoniker": "LibraryManagement\\Views\\DeleteBookWindow.xaml",
-              "ToolTip": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\Views\\DeleteBookWindow.xaml",
-              "RelativeToolTip": "LibraryManagement\\Views\\DeleteBookWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-07T09:33:21.051Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 5,
               "Title": "AddBooksViewModel.cs",
               "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\ViewModels\\AddBooksViewModel.cs",
               "RelativeDocumentMoniker": "LibraryManagement\\ViewModels\\AddBooksViewModel.cs",
@@ -326,58 +249,58 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "BorrowedBooksPage.g.cs",
-              "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\obj\\Debug\\net8.0-windows\\Views\\BorrowedBooksPage.g.cs",
-              "RelativeDocumentMoniker": "LibraryManagement\\obj\\Debug\\net8.0-windows\\Views\\BorrowedBooksPage.g.cs",
-              "ToolTip": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\obj\\Debug\\net8.0-windows\\Views\\BorrowedBooksPage.g.cs",
-              "RelativeToolTip": "LibraryManagement\\obj\\Debug\\net8.0-windows\\Views\\BorrowedBooksPage.g.cs",
-              "ViewState": "AQIAACwAAAAAAAAAAAAWwDkAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T08:25:08.569Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "AddStudentWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\Views\\AddStudentWindow.xaml.cs",
-              "RelativeDocumentMoniker": "LibraryManagement\\Views\\AddStudentWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\Views\\AddStudentWindow.xaml.cs",
-              "RelativeToolTip": "LibraryManagement\\Views\\AddStudentWindow.xaml.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T08:22:37.196Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "AddStudentWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\Views\\AddStudentWindow.xaml",
-              "RelativeDocumentMoniker": "LibraryManagement\\Views\\AddStudentWindow.xaml",
-              "ToolTip": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\Views\\AddStudentWindow.xaml",
-              "RelativeToolTip": "LibraryManagement\\Views\\AddStudentWindow.xaml",
+              "DocumentIndex": 4,
+              "Title": "BorrowReturnPage.xaml",
+              "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\Views\\BorrowReturnPage.xaml",
+              "RelativeDocumentMoniker": "LibraryManagement\\Views\\BorrowReturnPage.xaml",
+              "ToolTip": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\Views\\BorrowReturnPage.xaml",
+              "RelativeToolTip": "LibraryManagement\\Views\\BorrowReturnPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-07T07:42:42.109Z",
+              "WhenOpened": "2024-11-06T13:27:18.381Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "AddBooksWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\Views\\AddBooksWindow.xaml.cs",
-              "RelativeDocumentMoniker": "LibraryManagement\\Views\\AddBooksWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\Views\\AddBooksWindow.xaml.cs",
-              "RelativeToolTip": "LibraryManagement\\Views\\AddBooksWindow.xaml.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAAwBwAAAAAAAAA",
+              "DocumentIndex": 3,
+              "Title": "BorrowReturnViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\ViewModels\\BorrowReturnViewModel.cs",
+              "RelativeDocumentMoniker": "LibraryManagement\\ViewModels\\BorrowReturnViewModel.cs",
+              "ToolTip": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\ViewModels\\BorrowReturnViewModel.cs",
+              "RelativeToolTip": "LibraryManagement\\ViewModels\\BorrowReturnViewModel.cs",
+              "ViewState": "AQIAAKIAAAAAAAAAAAAiwBkAAABWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T07:42:30.377Z",
+              "WhenOpened": "2024-11-06T13:31:38.065Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 1,
+              "Title": "BookRepository.cs",
+              "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagementSystem\\Data\\BookRepository.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Data\\BookRepository.cs",
+              "ToolTip": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagementSystem\\Data\\BookRepository.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\Data\\BookRepository.cs",
+              "ViewState": "AQIAABkBAAAAAAAAAAAAABkBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T14:30:46.856Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BorrowRepository.cs",
+              "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagementSystem\\Data\\BorrowRepository.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Data\\BorrowRepository.cs",
+              "ToolTip": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagementSystem\\Data\\BorrowRepository.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\Data\\BorrowRepository.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAgwEsAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T09:18:03.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "AddBooksWindow.xaml",
               "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\Views\\AddBooksWindow.xaml",
               "RelativeDocumentMoniker": "LibraryManagement\\Views\\AddBooksWindow.xaml",
@@ -389,7 +312,185 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BookRepositoryTests.cs",
+              "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagementSystem.Tests\\BookRepositoryTests.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem.Tests\\BookRepositoryTests.cs",
+              "ToolTip": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagementSystem.Tests\\BookRepositoryTests.cs",
+              "RelativeToolTip": "LibraryManagementSystem.Tests\\BookRepositoryTests.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAowDsAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T14:40:10.956Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "DeleteBookWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\Views\\DeleteBookWindow.xaml.cs",
+              "RelativeDocumentMoniker": "LibraryManagement\\Views\\DeleteBookWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\Views\\DeleteBookWindow.xaml.cs",
+              "RelativeToolTip": "LibraryManagement\\Views\\DeleteBookWindow.xaml.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAA8wBIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T10:17:28.44Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ImportExportPage.xaml",
+              "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\Views\\ImportExportPage.xaml",
+              "RelativeDocumentMoniker": "LibraryManagement\\Views\\ImportExportPage.xaml",
+              "ToolTip": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\Views\\ImportExportPage.xaml",
+              "RelativeToolTip": "LibraryManagement\\Views\\ImportExportPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-06T14:02:58.109Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "BorrowedBooksViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\ViewModels\\BorrowedBooksViewModel.cs",
+              "RelativeDocumentMoniker": "LibraryManagement\\ViewModels\\BorrowedBooksViewModel.cs",
+              "ToolTip": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\ViewModels\\BorrowedBooksViewModel.cs",
+              "RelativeToolTip": "LibraryManagement\\ViewModels\\BorrowedBooksViewModel.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAywCAAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T13:32:17.8Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "StatisticsViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\ViewModels\\StatisticsViewModel.cs",
+              "RelativeDocumentMoniker": "LibraryManagement\\ViewModels\\StatisticsViewModel.cs",
+              "ToolTip": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\ViewModels\\StatisticsViewModel.cs",
+              "RelativeToolTip": "LibraryManagement\\ViewModels\\StatisticsViewModel.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAQwA0AAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T13:31:58.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "BorrowedBooksPage.xaml",
+              "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\Views\\BorrowedBooksPage.xaml",
+              "RelativeDocumentMoniker": "LibraryManagement\\Views\\BorrowedBooksPage.xaml",
+              "ToolTip": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\Views\\BorrowedBooksPage.xaml",
+              "RelativeToolTip": "LibraryManagement\\Views\\BorrowedBooksPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-06T13:30:07.144Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "StatisticsPage.xaml",
+              "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\Views\\StatisticsPage.xaml",
+              "RelativeDocumentMoniker": "LibraryManagement\\Views\\StatisticsPage.xaml",
+              "ToolTip": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\Views\\StatisticsPage.xaml",
+              "RelativeToolTip": "LibraryManagement\\Views\\StatisticsPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-06T13:29:23.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 40,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "LibraryManagement\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\MainWindow.xaml.cs",
+              "RelativeToolTip": "LibraryManagement\\MainWindow.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvw4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T12:53:16.475Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "LibraryManagement\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\MainWindow.xaml",
+              "RelativeToolTip": "LibraryManagement\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-04T12:53:18.293Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "BorrowedBooksPage.g.cs",
+              "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\obj\\Debug\\net8.0-windows\\Views\\BorrowedBooksPage.g.cs",
+              "RelativeDocumentMoniker": "LibraryManagement\\obj\\Debug\\net8.0-windows\\Views\\BorrowedBooksPage.g.cs",
+              "ToolTip": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\obj\\Debug\\net8.0-windows\\Views\\BorrowedBooksPage.g.cs",
+              "RelativeToolTip": "LibraryManagement\\obj\\Debug\\net8.0-windows\\Views\\BorrowedBooksPage.g.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAWwDkAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T08:25:08.569Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "AddStudentWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\Views\\AddStudentWindow.xaml.cs",
+              "RelativeDocumentMoniker": "LibraryManagement\\Views\\AddStudentWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\Views\\AddStudentWindow.xaml.cs",
+              "RelativeToolTip": "LibraryManagement\\Views\\AddStudentWindow.xaml.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T08:22:37.196Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "AddStudentWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\Views\\AddStudentWindow.xaml",
+              "RelativeDocumentMoniker": "LibraryManagement\\Views\\AddStudentWindow.xaml",
+              "ToolTip": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\Views\\AddStudentWindow.xaml",
+              "RelativeToolTip": "LibraryManagement\\Views\\AddStudentWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-07T07:42:42.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "AddBooksWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\Views\\AddBooksWindow.xaml.cs",
+              "RelativeDocumentMoniker": "LibraryManagement\\Views\\AddBooksWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\Views\\AddBooksWindow.xaml.cs",
+              "RelativeToolTip": "LibraryManagement\\Views\\AddBooksWindow.xaml.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAwBwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T07:42:30.377Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ImportExportViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\ViewModels\\ImportExportViewModel.cs",
+              "RelativeDocumentMoniker": "LibraryManagement\\ViewModels\\ImportExportViewModel.cs",
+              "ToolTip": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\ViewModels\\ImportExportViewModel.cs",
+              "RelativeToolTip": "LibraryManagement\\ViewModels\\ImportExportViewModel.cs",
+              "ViewState": "AQIAAGkAAAAAAAAAAAAWwG8AAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T12:42:22.17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "DeleteBookWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\Views\\DeleteBookWindow.xaml",
+              "RelativeDocumentMoniker": "LibraryManagement\\Views\\DeleteBookWindow.xaml",
+              "ToolTip": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\Views\\DeleteBookWindow.xaml",
+              "RelativeToolTip": "LibraryManagement\\Views\\DeleteBookWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-07T09:33:21.051Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
               "Title": "ResourcePart.cs",
               "DocumentMoniker": "C:\\Users\\elias\\AppData\\Local\\Temp\\.vsdbgsrc\\6b2dfb9d5e4949b718ee78fa9415cabf37518e9447a2764ba224d240518b710f\\ResourcePart.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\6b2dfb9d5e4949b718ee78fa9415cabf37518e9447a2764ba224d240518b710f\\ResourcePart.cs",
@@ -397,25 +498,24 @@
               "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\6b2dfb9d5e4949b718ee78fa9415cabf37518e9447a2764ba224d240518b710f\\ResourcePart.cs [Read Only]",
               "ViewState": "AQIAAA0AAAAAAAAAAAAqwCcAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T07:19:12.063Z",
-              "EditorCaption": " [Read Only]"
+              "WhenOpened": "2024-11-07T07:19:12.063Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 13,
               "Title": "BooksPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\Views\\BooksPage.xaml.cs",
               "RelativeDocumentMoniker": "LibraryManagement\\Views\\BooksPage.xaml.cs",
               "ToolTip": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\Views\\BooksPage.xaml.cs",
               "RelativeToolTip": "LibraryManagement\\Views\\BooksPage.xaml.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAYwBUAAAApAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAlwBkAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-07T07:16:37.162Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 12,
               "Title": "BooksPage.xaml",
               "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\Views\\BooksPage.xaml",
               "RelativeDocumentMoniker": "LibraryManagement\\Views\\BooksPage.xaml",
@@ -427,7 +527,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 42,
               "Title": "NavigationService.cs",
               "DocumentMoniker": "C:\\Users\\elias\\AppData\\Local\\Temp\\.vsdbgsrc\\bf181cacff03ee9afb8aeba00dc7c836930532be0d5d44476e601f59af11bfe8\\NavigationService.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\bf181cacff03ee9afb8aeba00dc7c836930532be0d5d44476e601f59af11bfe8\\NavigationService.cs",
@@ -435,12 +535,11 @@
               "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\bf181cacff03ee9afb8aeba00dc7c836930532be0d5d44476e601f59af11bfe8\\NavigationService.cs [Read Only]",
               "ViewState": "AQIAAAwEAAAAAAAAAAAlwB4EAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T14:46:07.312Z",
-              "EditorCaption": " [Read Only]"
+              "WhenOpened": "2024-11-06T14:46:07.312Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 30,
               "Title": "StudentsPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\Views\\StudentsPage.xaml.cs",
               "RelativeDocumentMoniker": "LibraryManagement\\Views\\StudentsPage.xaml.cs",
@@ -448,12 +547,11 @@
               "RelativeToolTip": "LibraryManagement\\Views\\StudentsPage.xaml.cs",
               "ViewState": "AQIAAAwAAAAAAAAAAAAAAB0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T14:36:57.397Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-06T14:36:57.397Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 23,
               "Title": "ImportExportPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\Views\\ImportExportPage.xaml.cs",
               "RelativeDocumentMoniker": "LibraryManagement\\Views\\ImportExportPage.xaml.cs",
@@ -461,12 +559,11 @@
               "RelativeToolTip": "LibraryManagement\\Views\\ImportExportPage.xaml.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T14:36:36.18Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-06T14:36:36.18Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 27,
               "Title": "BorrowReturnPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\Views\\BorrowReturnPage.xaml.cs",
               "RelativeDocumentMoniker": "LibraryManagement\\Views\\BorrowReturnPage.xaml.cs",
@@ -474,12 +571,11 @@
               "RelativeToolTip": "LibraryManagement\\Views\\BorrowReturnPage.xaml.cs",
               "ViewState": "AQIAAAcAAAAAAAAAAAAkwBgAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T14:36:06.081Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-06T14:36:06.081Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 25,
               "Title": "BorrowedBooksPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\Views\\BorrowedBooksPage.xaml.cs",
               "RelativeDocumentMoniker": "LibraryManagement\\Views\\BorrowedBooksPage.xaml.cs",
@@ -487,12 +583,11 @@
               "RelativeToolTip": "LibraryManagement\\Views\\BorrowedBooksPage.xaml.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAAtwBkAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T14:34:43.437Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-06T14:34:43.437Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 26,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\App.xaml",
               "RelativeDocumentMoniker": "LibraryManagement\\App.xaml",
@@ -504,7 +599,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 19,
               "Title": "StatisticsPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\Views\\StatisticsPage.xaml.cs",
               "RelativeDocumentMoniker": "LibraryManagement\\Views\\StatisticsPage.xaml.cs",
@@ -512,12 +607,11 @@
               "RelativeToolTip": "LibraryManagement\\Views\\StatisticsPage.xaml.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T14:33:49.104Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-06T14:33:49.104Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 17,
               "Title": "NavigationControl.xaml.cs",
               "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\Components\\NavigationControl.xaml.cs",
               "RelativeDocumentMoniker": "LibraryManagement\\Components\\NavigationControl.xaml.cs",
@@ -530,7 +624,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 18,
               "Title": "RelayCommand.cs",
               "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\Components\\RelayCommand.cs",
               "RelativeDocumentMoniker": "LibraryManagement\\Components\\RelayCommand.cs",
@@ -543,7 +637,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 16,
               "Title": "NavigationControl.xaml",
               "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\Components\\NavigationControl.xaml",
               "RelativeDocumentMoniker": "LibraryManagement\\Components\\NavigationControl.xaml",
@@ -555,93 +649,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ImportExportPage.xaml",
-              "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\Views\\ImportExportPage.xaml",
-              "RelativeDocumentMoniker": "LibraryManagement\\Views\\ImportExportPage.xaml",
-              "ToolTip": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\Views\\ImportExportPage.xaml",
-              "RelativeToolTip": "LibraryManagement\\Views\\ImportExportPage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-06T14:02:58.109Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "BorrowedBooksViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\ViewModels\\BorrowedBooksViewModel.cs",
-              "RelativeDocumentMoniker": "LibraryManagement\\ViewModels\\BorrowedBooksViewModel.cs",
-              "ToolTip": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\ViewModels\\BorrowedBooksViewModel.cs",
-              "RelativeToolTip": "LibraryManagement\\ViewModels\\BorrowedBooksViewModel.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAywCAAAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T13:32:17.8Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "StatisticsViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\ViewModels\\StatisticsViewModel.cs",
-              "RelativeDocumentMoniker": "LibraryManagement\\ViewModels\\StatisticsViewModel.cs",
-              "ToolTip": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\ViewModels\\StatisticsViewModel.cs",
-              "RelativeToolTip": "LibraryManagement\\ViewModels\\StatisticsViewModel.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAQwCMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T13:31:58.942Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "BorrowedBooksPage.xaml",
-              "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\Views\\BorrowedBooksPage.xaml",
-              "RelativeDocumentMoniker": "LibraryManagement\\Views\\BorrowedBooksPage.xaml",
-              "ToolTip": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\Views\\BorrowedBooksPage.xaml",
-              "RelativeToolTip": "LibraryManagement\\Views\\BorrowedBooksPage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-06T13:30:07.144Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "StatisticsPage.xaml",
-              "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\Views\\StatisticsPage.xaml",
-              "RelativeDocumentMoniker": "LibraryManagement\\Views\\StatisticsPage.xaml",
-              "ToolTip": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\Views\\StatisticsPage.xaml",
-              "RelativeToolTip": "LibraryManagement\\Views\\StatisticsPage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-06T13:29:23.939Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BorrowReturnPage.xaml",
-              "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\Views\\BorrowReturnPage.xaml",
-              "RelativeDocumentMoniker": "LibraryManagement\\Views\\BorrowReturnPage.xaml",
-              "ToolTip": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\Views\\BorrowReturnPage.xaml",
-              "RelativeToolTip": "LibraryManagement\\Views\\BorrowReturnPage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-06T13:27:18.381Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 29,
               "Title": "StudentsPage.xaml",
               "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\Views\\StudentsPage.xaml",
               "RelativeDocumentMoniker": "LibraryManagement\\Views\\StudentsPage.xaml",
               "ToolTip": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\Views\\StudentsPage.xaml",
               "RelativeToolTip": "LibraryManagement\\Views\\StudentsPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-06T13:27:03.133Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-06T13:27:03.133Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 39,
               "Title": "MainViewModel.cs",
               "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\ViewModels\\MainViewModel.cs",
               "RelativeDocumentMoniker": "LibraryManagement\\ViewModels\\MainViewModel.cs",
@@ -649,12 +668,11 @@
               "RelativeToolTip": "LibraryManagement\\ViewModels\\MainViewModel.cs",
               "ViewState": "AQIAAAwAAAAAAAAAAAAAABgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T13:20:43.365Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-06T13:20:43.365Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 35,
               "Title": "BorrowRepositoryTests.cs",
               "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagementSystem.Tests\\BorrowRepositoryTests.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystem.Tests\\BorrowRepositoryTests.cs",
@@ -662,12 +680,11 @@
               "RelativeToolTip": "LibraryManagementSystem.Tests\\BorrowRepositoryTests.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T10:25:00.793Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-06T10:25:00.793Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 43,
               "Title": "StudentRepositoryTests.cs",
               "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagementSystem.Tests\\StudentRepositoryTests.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystem.Tests\\StudentRepositoryTests.cs",
@@ -675,51 +692,11 @@
               "RelativeToolTip": "LibraryManagementSystem.Tests\\StudentRepositoryTests.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAALAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T09:45:53.088Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-06T09:45:53.088Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "StudentRepository.cs",
-              "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagementSystem\\Data\\StudentRepository.cs",
-              "RelativeDocumentMoniker": "LibraryManagementSystem\\Data\\StudentRepository.cs",
-              "ToolTip": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagementSystem\\Data\\StudentRepository.cs",
-              "RelativeToolTip": "LibraryManagementSystem\\Data\\StudentRepository.cs",
-              "ViewState": "AQIAADcAAAAAAAAAAAAkwEoAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T09:18:28.961Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "BookRepositoryTests.cs",
-              "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagementSystem.Tests\\BookRepositoryTests.cs",
-              "RelativeDocumentMoniker": "LibraryManagementSystem.Tests\\BookRepositoryTests.cs",
-              "ToolTip": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagementSystem.Tests\\BookRepositoryTests.cs",
-              "RelativeToolTip": "LibraryManagementSystem.Tests\\BookRepositoryTests.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAgwBcAAABhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T14:40:10.956Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "BookRepository.cs",
-              "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagementSystem\\Data\\BookRepository.cs",
-              "RelativeDocumentMoniker": "LibraryManagementSystem\\Data\\BookRepository.cs",
-              "ToolTip": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagementSystem\\Data\\BookRepository.cs",
-              "RelativeToolTip": "LibraryManagementSystem\\Data\\BookRepository.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABUAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T14:30:46.856Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 44,
               "Title": "DatabaseConnection.cs",
               "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagementSystem\\Data\\DatabaseConnection.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystem\\Data\\DatabaseConnection.cs",
@@ -727,12 +704,11 @@
               "RelativeToolTip": "LibraryManagementSystem\\Data\\DatabaseConnection.cs",
               "ViewState": "AQIAABUAAAAAAAAAAAA5wCkAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T13:28:30.851Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T13:28:30.851Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 11,
               "Title": "Borrow.cs",
               "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagementSystem\\Models\\Borrow.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystem\\Models\\Borrow.cs",
@@ -745,7 +721,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 10,
               "Title": "Student.cs",
               "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagementSystem\\Models\\Student.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystem\\Models\\Student.cs",
@@ -758,7 +734,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 9,
               "Title": "Book.cs",
               "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagementSystem\\Models\\Book.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystem\\Models\\Book.cs",
@@ -771,7 +747,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 45,
               "Title": "LibraryManagement.csproj",
               "DocumentMoniker": "C:\\Users\\elias\\Desktop\\zweite Blockwoche\\LibraryManagement\\LibraryManagement\\LibraryManagement.csproj",
               "RelativeDocumentMoniker": "LibraryManagement\\LibraryManagement.csproj",
@@ -779,8 +755,7 @@
               "RelativeToolTip": "LibraryManagement\\LibraryManagement.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-04T14:01:14.723Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T14:01:14.723Z"
             }
           ]
         }

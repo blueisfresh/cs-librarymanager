@@ -15,81 +15,158 @@ namespace LibraryManagementSystem.Data
             _databaseConnection = DatabaseConnection.Instance.GetConnection();
         }
 
-        public void AddStudent(Student student)
+        private void EnsureConnectionOpen()
         {
-            string query = "INSERT INTO TblStudent (LibraryCardNum, FirstName, LastName) VALUES (@LibraryCardNum, @FirstName, @LastName)";
-            using (var command = new SqlCommand(query, _databaseConnection))
+            if (_databaseConnection.State == ConnectionState.Closed)
             {
-                command.Parameters.AddWithValue("@LibraryCardNum", student.LibraryCardNum);
-                command.Parameters.AddWithValue("@FirstName", student.FirstName);
-                command.Parameters.AddWithValue("@LastName", student.LastName);
-                command.ExecuteNonQuery();
+                _databaseConnection.Open();
             }
         }
 
+        private void EnsureConnectionClosed()
+        {
+            if (_databaseConnection.State == ConnectionState.Open)
+            {
+                _databaseConnection.Close();
+            }
+        }
+
+        public void AddStudent(Student student)
+        {
+            try
+            {
+                EnsureConnectionOpen();
+
+                string checkQuery = "SELECT COUNT(*) FROM TblStudent WHERE LibraryCardNum = @LibraryCardNum";
+                using (var checkCommand = new SqlCommand(checkQuery, _databaseConnection))
+                {
+                    checkCommand.Parameters.AddWithValue("@LibraryCardNum", student.LibraryCardNum);
+                    int count = (int)checkCommand.ExecuteScalar();
+                    if (count > 0)
+                    {
+                        throw new InvalidOperationException("Ein Student mit dieser Bibliothekskartennummer existiert bereits.");
+                    }
+                }
+
+                string query = "INSERT INTO TblStudent (...) VALUES (...)";
+                using (var command = new SqlCommand(query, _databaseConnection))
+                {
+                    command.ExecuteNonQuery();
+                }
+            }
+            catch (InvalidOperationException ex)
+            {
+                Console.WriteLine(ex.Message);
+                throw;
+            }
+            finally
+            {
+                EnsureConnectionClosed();
+            }
+        }
+
+
         public Student GetStudentByLibraryCard(string libraryCard)
         {
-            string query = "SELECT * FROM TblStudent WHERE LibraryCardNum = @LibraryCardNum";
-            using (var command = new SqlCommand(query, _databaseConnection))
+            try
             {
-                command.Parameters.AddWithValue("@LibraryCardNum", libraryCard);
-                using (var reader = command.ExecuteReader())
+                EnsureConnectionOpen();
+
+                string query = "SELECT * FROM TblStudent WHERE LibraryCardNum = @LibraryCardNum";
+                using (var command = new SqlCommand(query, _databaseConnection))
                 {
-                    if (reader.Read())
+                    command.Parameters.AddWithValue("@LibraryCardNum", libraryCard);
+                    using (var reader = command.ExecuteReader())
                     {
-                        return new Student
+                        if (reader.Read())
                         {
-                            LibraryCardNum = Convert.ToInt32(reader["LibraryCardNum"]),
-                            FirstName = reader["FirstName"].ToString(),
-                            LastName = reader["LastName"].ToString()
-                        };
+                            return new Student
+                            {
+                                LibraryCardNum = Convert.ToInt32(reader["LibraryCardNum"]),
+                                FirstName = reader["FirstName"].ToString(),
+                                LastName = reader["LastName"].ToString()
+                            };
+                        }
                     }
                 }
             }
+            finally
+            {
+                EnsureConnectionClosed();
+            }
+
             return null; // Student not found
         }
 
         public void UpdateStudent(Student student)
         {
-            string query = "UPDATE TblStudent SET FirstName = @FirstName, LastName = @LastName WHERE LibraryCardNum = @LibraryCardNum";
-            using (var command = new SqlCommand(query, _databaseConnection))
+            try
             {
-                command.Parameters.AddWithValue("@FirstName", student.FirstName);
-                command.Parameters.AddWithValue("@LastName", student.LastName);
-                command.Parameters.AddWithValue("@LibraryCardNum", student.LibraryCardNum);
-                command.ExecuteNonQuery();
+                EnsureConnectionOpen();
+
+                string query = "UPDATE TblStudent SET FirstName = @FirstName, LastName = @LastName WHERE LibraryCardNum = @LibraryCardNum";
+                using (var command = new SqlCommand(query, _databaseConnection))
+                {
+                    command.Parameters.AddWithValue("@FirstName", student.FirstName);
+                    command.Parameters.AddWithValue("@LastName", student.LastName);
+                    command.Parameters.AddWithValue("@LibraryCardNum", student.LibraryCardNum);
+
+                    command.ExecuteNonQuery();
+                }
+            }
+            finally
+            {
+                EnsureConnectionClosed();
             }
         }
 
         public void DeleteStudent(string libraryCard)
         {
-            string query = "DELETE FROM TblStudent WHERE LibraryCardNum = @LibraryCardNum";
-            using (var command = new SqlCommand(query, _databaseConnection))
+            try
             {
-                command.Parameters.AddWithValue("@LibraryCardNum", libraryCard);
-                command.ExecuteNonQuery();
+                EnsureConnectionOpen();
+
+                string query = "DELETE FROM TblStudent WHERE LibraryCardNum = @LibraryCardNum";
+                using (var command = new SqlCommand(query, _databaseConnection))
+                {
+                    command.Parameters.AddWithValue("@LibraryCardNum", libraryCard);
+                    command.ExecuteNonQuery();
+                }
+            }
+            finally
+            {
+                EnsureConnectionClosed();
             }
         }
 
         public List<Student> GetAllStudents()
         {
-            string query = "SELECT * FROM TblStudent";
             var students = new List<Student>();
 
-            using (var command = new SqlCommand(query, _databaseConnection))
+            try
             {
-                using (var reader = command.ExecuteReader())
+                EnsureConnectionOpen();
+
+                string query = "SELECT * FROM TblStudent";
+                using (var command = new SqlCommand(query, _databaseConnection))
                 {
-                    while (reader.Read())
+                    using (var reader = command.ExecuteReader())
                     {
-                        students.Add(new Student
+                        while (reader.Read())
                         {
-                            LibraryCardNum = Convert.ToInt32(reader["LibraryCardNum"]),
-                            FirstName = reader["FirstName"].ToString(),
-                            LastName = reader["LastName"].ToString()
-                        });
+                            students.Add(new Student
+                            {
+                                LibraryCardNum = Convert.ToInt32(reader["LibraryCardNum"]),
+                                FirstName = reader["FirstName"].ToString(),
+                                LastName = reader["LastName"].ToString()
+                            });
+                        }
                     }
                 }
+            }
+            finally
+            {
+                EnsureConnectionClosed();
             }
 
             return students;
@@ -97,30 +174,36 @@ namespace LibraryManagementSystem.Data
 
         public List<Student> GetStudentByLastName(string lastName)
         {
-            string query = "SELECT * FROM TblStudent WHERE LastName = @LastName";
             var students = new List<Student>();
 
-            using (var command = new SqlCommand(query, _databaseConnection))
+            try
             {
-                command.Parameters.AddWithValue("@LastName", lastName);
-                using (var reader = command.ExecuteReader())
+                EnsureConnectionOpen();
+
+                string query = "SELECT * FROM TblStudent WHERE LastName = @LastName";
+                using (var command = new SqlCommand(query, _databaseConnection))
                 {
-                    while (reader.Read())
+                    command.Parameters.AddWithValue("@LastName", lastName);
+                    using (var reader = command.ExecuteReader())
                     {
-                        students.Add(new Student
+                        while (reader.Read())
                         {
-                            LibraryCardNum = Convert.ToInt32(reader["LibraryCardNum"]),
-                            FirstName = reader["FirstName"].ToString(),
-                            LastName = reader["LastName"].ToString()
-                        });
+                            students.Add(new Student
+                            {
+                                LibraryCardNum = Convert.ToInt32(reader["LibraryCardNum"]),
+                                FirstName = reader["FirstName"].ToString(),
+                                LastName = reader["LastName"].ToString()
+                            });
+                        }
                     }
                 }
+            }
+            finally
+            {
+                EnsureConnectionClosed();
             }
 
             return students;
         }
-
-
     }
-
 }

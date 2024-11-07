@@ -1,10 +1,5 @@
 ﻿using LibraryManagementSystem.Data;
-using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Input;
 using LibraryManagementSystem.Models;
 using Microsoft.Data.SqlClient;
@@ -16,9 +11,11 @@ namespace LibraryManagement.ViewModels
     {
         private readonly BookRepository _bookRepository;
         public ObservableCollection<Book> Books { get; set; }
+
         public ICommand OpenAddBooksWindowCommand { get; }
         public ICommand EditBookCommand { get; }
         public ICommand OpenDeleteBookWindowCommand { get; }
+        public ICommand SearchCommand { get; }
 
         private Book _selectedBook;
         public Book SelectedBook
@@ -27,18 +24,30 @@ namespace LibraryManagement.ViewModels
             set
             {
                 _selectedBook = value;
-                // Hier können Sie OnPropertyChanged("SelectedBook") aufrufen, wenn Sie INotifyPropertyChanged implementieren
+                // Raise OnPropertyChanged("SelectedBook") here if INotifyPropertyChanged is implemented
             }
         }
 
+        private string _searchTerm;
+        public string SearchTerm
+        {
+            get => _searchTerm;
+            set
+            {
+                _searchTerm = value;
+                // Raise OnPropertyChanged("SearchTerm") here if INotifyPropertyChanged is implemented
+            }
+        }
 
         public BooksViewModel()
         {
             SqlConnection _dbConnection = DatabaseConnection.Instance.GetConnection();
             _bookRepository = new BookRepository(Convert.ToString(_dbConnection));
+
             OpenAddBooksWindowCommand = new RelayCommand(OpenAddBooksWindow);
             OpenDeleteBookWindowCommand = new RelayCommand(OpenDeleteBookWindow);
             EditBookCommand = new RelayCommand(OpenEditBookWindow);
+            SearchCommand = new RelayCommand(SearchBooks);
 
             LoadBooks();
         }
@@ -52,12 +61,9 @@ namespace LibraryManagement.ViewModels
         private void OpenAddBooksWindow()
         {
             var addBooksWindow = new Views.AddBooksWindow();
-
-            // Pass the existing _bookRepository to AddBooksViewModel
             var addBooksViewModel = new AddBooksViewModel(_bookRepository);
 
-            addBooksWindow.DataContext = addBooksViewModel;  // Set DataContext to AddBooksViewModel
-
+            addBooksWindow.DataContext = addBooksViewModel;
             addBooksWindow.ShowDialog();
 
             LoadBooks();  // Refresh books list after closing AddBooksWindow, if necessary
@@ -74,20 +80,25 @@ namespace LibraryManagement.ViewModels
             if (SelectedBook == null) return;
 
             var addBooksWindow = new Views.AddBooksWindow();
-
-            // Pass the existing _bookRepository to AddBooksViewModel
             var addBooksViewModel = new AddBooksViewModel(_bookRepository)
             {
-                NewBook = SelectedBook // Das Fenster mit dem ausgewählten Buch befüllen
+                NewBook = SelectedBook // Prefill the window with the selected book
             };
 
             addBooksWindow.DataContext = addBooksViewModel;
             addBooksWindow.ShowDialog();
 
-            // Nach dem Schließen des Fensters die Liste aktualisieren
-            LoadBooks();
+            LoadBooks();  // Refresh books list after closing the edit window
         }
 
-
+        private void SearchBooks()
+        {
+            var result = _bookRepository.SearchBooksByTitle(SearchTerm);
+            Books.Clear();
+            foreach (var book in result)
+            {
+                Books.Add(book);
+            }
+        }
     }
 }

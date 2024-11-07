@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using LibraryManagementSystem.Models;
 using System.Data.Common;
+using System.Data;
 
 namespace LibraryManagementSystem.Data
 {
@@ -20,19 +21,52 @@ namespace LibraryManagementSystem.Data
 
         public void BorrowBook(string studentLibraryCardNum, string bookBookNum, DateTime dueDate)
         {
-            // Check if the book is already borrowed
-            string checkQuery = "SELECT COUNT(*) FROM TblBorrow WHERE BookBookNum = @BookBookNum AND ReturnDate IS NULL";
-            using (var checkCommand = new SqlCommand(checkQuery, _databaseConnection))
+            // Check if the student exists
+            string checkStudentQuery = "SELECT COUNT(*) FROM TblStudent WHERE LibraryCardNum = @LibraryCardNum";
+            using (var checkStudentCommand = new SqlCommand(checkStudentQuery, _databaseConnection))
             {
-                checkCommand.Parameters.AddWithValue("@BookBookNum", bookBookNum);
-                int borrowCount = (int)checkCommand.ExecuteScalar();
+                checkStudentCommand.Parameters.AddWithValue("@LibraryCardNum", studentLibraryCardNum);
+                EnsureConnectionOpen();
+                int studentCount = (int)checkStudentCommand.ExecuteScalar();
+                EnsureConnectionClosed();
 
-                if (borrowCount > 0)
+                if (studentCount == 0)
                 {
-                    throw new InvalidOperationException("This book is already borrowed and cannot be borrowed again until it is returned.");
+                    throw new InvalidOperationException("Der Student mit der angegebenen Bibliothekskartennummer existiert nicht.");
                 }
             }
 
+            // Check if the book exists
+            string checkBookQuery = "SELECT COUNT(*) FROM TblBook WHERE BookNum = @BookNum";
+            using (var checkBookCommand = new SqlCommand(checkBookQuery, _databaseConnection))
+            {
+                checkBookCommand.Parameters.AddWithValue("@BookNum", bookBookNum);
+                EnsureConnectionOpen();
+                int bookCount = (int)checkBookCommand.ExecuteScalar();
+                EnsureConnectionClosed();
+
+                if (bookCount == 0)
+                {
+                    throw new InvalidOperationException("Das Buch mit der angegebenen Buchnummer existiert nicht.");
+                }
+            }
+
+            // Check if the book is already borrowed
+            string checkBorrowQuery = "SELECT COUNT(*) FROM TblBorrow WHERE BookBookNum = @BookBookNum AND ReturnDate IS NULL";
+            using (var checkBorrowCommand = new SqlCommand(checkBorrowQuery, _databaseConnection))
+            {
+                checkBorrowCommand.Parameters.AddWithValue("@BookBookNum", bookBookNum);
+                EnsureConnectionOpen();
+                int borrowCount = (int)checkBorrowCommand.ExecuteScalar();
+                EnsureConnectionClosed();
+
+                if (borrowCount > 0)
+                {
+                    throw new InvalidOperationException("Dieses Buch ist bereits ausgeliehen und kann nicht erneut ausgeliehen werden, bis es zurückgegeben wird.");
+                }
+            }
+
+            // Insert borrow record if all checks pass
             string query = "INSERT INTO TblBorrow (StudentLibraryCardNum, BookBookNum, BorrowDate, DueDate) VALUES (@StudentLibraryCardNum, @BookBookNum, @BorrowDate, @DueDate)";
             using (var command = new SqlCommand(query, _databaseConnection))
             {
@@ -40,7 +74,27 @@ namespace LibraryManagementSystem.Data
                 command.Parameters.AddWithValue("@BookBookNum", bookBookNum);
                 command.Parameters.AddWithValue("@BorrowDate", DateTime.Now);
                 command.Parameters.AddWithValue("@DueDate", dueDate);
+
+                EnsureConnectionOpen();
                 command.ExecuteNonQuery();
+                EnsureConnectionClosed();
+            }
+        }
+
+        // Hilfsmethode zur Sicherstellung, dass die Verbindung nur bei Bedarf geöffnet/geschlossen wird
+        private void EnsureConnectionOpen()
+        {
+            if (_databaseConnection.State == ConnectionState.Closed)
+            {
+                _databaseConnection.Open();
+            }
+        }
+
+        private void EnsureConnectionClosed()
+        {
+            if (_databaseConnection.State == ConnectionState.Open)
+            {
+                _databaseConnection.Close();
             }
         }
 
