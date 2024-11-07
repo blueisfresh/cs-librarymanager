@@ -1,12 +1,21 @@
 ﻿<Window x:Class="LibraryManagement.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:LibraryManagement"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        xmlns:local="clr-namespace:LibraryManagement.Components"
+        Title="Bibliothekverwaltung" Height="600" Width="800">
     <Grid>
+        <!-- Define Columns: Left column for sidebar, Right column for main content -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50"/>
+            <!-- Fixed width for the sidebar -->
+            <ColumnDefinition Width="*"/>
+            <!-- Main content area fills the remaining space -->
+        </Grid.ColumnDefinitions>
 
+        <!-- Sidebar -->
+        <local:NavigationControl Grid.Column="0" DataContext="{Binding}"/>
+
+        <!-- Main Content Area -->
+        <Frame Name="MainFrame" Grid.Column="1" NavigationUIVisibility="Hidden"/>
     </Grid>
 </Window>

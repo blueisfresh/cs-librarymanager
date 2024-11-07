@@ -1,0 +1,58 @@
+﻿<Window x:Class="LibraryManagement.Views.ImportExportPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Import / Export von Daten" Height="500" Width="400">
+    <Grid Margin="20">
+        <!-- Title -->
+        <TextBlock Text="Import / Export von Daten" FontWeight="Bold" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,20"/>
+
+        <!-- Export Section -->
+        <StackPanel VerticalAlignment="Top" Margin="10,60,0,0">
+            <TextBlock Text="Exportieren:" FontWeight="Bold" Margin="0,0,0,5"/>
+            <CheckBox Content="Bücher" Margin="10,0,0,0"/>
+            <CheckBox Content="Schüler" Margin="10,0,0,0"/>
+            <CheckBox Content="Ausleihen" Margin="10,0,0,0"/>
+
+            <!-- File Format Selection -->
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                <TextBlock Text="Datei Format:" VerticalAlignment="Center" Margin="0,0,10,0"/>
+                <ComboBox Width="100">
+                    <ComboBoxItem Content="CSV" IsSelected="True"/>
+                    <ComboBoxItem Content="Excel"/>
+                    <ComboBoxItem Content="JSON"/>
+                </ComboBox>
+            </StackPanel>
+
+            <!-- Export Button -->
+            <Button Content="Exportieren" Width="100" HorizontalAlignment="Center" Margin="0,10,0,0"/>
+        </StackPanel>
+
+        <!-- Import Section -->
+        <StackPanel VerticalAlignment="Top" Margin="10,240,0,0">
+            <TextBlock Text="Importieren:" FontWeight="Bold" Margin="0,0,0,5"/>
+
+            <!-- File Selection and Browse Button -->
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,0">
+                <TextBlock Text="Datei auswählen:" VerticalAlignment="Center" Margin="0,0,10,0"/>
+                <TextBox Width="150" IsReadOnly="True"/>
+                <Button Content="Durchsuchen" Width="80" Margin="5,0,0,0"/>
+            </StackPanel>
+
+            <!-- File Format Selection -->
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                <TextBlock Text="Datei Format:" VerticalAlignment="Center" Margin="0,0,10,0"/>
+                <ComboBox Width="100">
+                    <ComboBoxItem Content="CSV" IsSelected="True"/>
+                    <ComboBoxItem Content="Excel"/>
+                    <ComboBoxItem Content="JSON"/>
+                </ComboBox>
+            </StackPanel>
+
+            <!-- Import Button -->
+            <Button Content="Importieren" Width="100" HorizontalAlignment="Center" Margin="0,10,0,0"/>
+        </StackPanel>
+
+        <!-- Back to Main Menu Button -->
+        <Button Content="Zurück zum Hauptmenü" Width="180" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,10,0,0"/>
+    </Grid>
+</Window>

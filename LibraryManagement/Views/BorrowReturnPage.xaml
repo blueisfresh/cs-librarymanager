@@ -1,0 +1,51 @@
+﻿<Window x:Class="LibraryManagement.Views.BorrowReturnPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Ausleihe / Rückgabe" Height="500" Width="400">
+    <Grid Margin="20">
+        <!-- Title -->
+        <TextBlock Text="Ausleihe / Rückgabe" FontWeight="Bold" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,20"/>
+
+        <!-- Action Selection (Ausleihe / Rückgabe) -->
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Margin="10,60,0,0">
+            <TextBlock Text="Aktion:" VerticalAlignment="Center" Margin="0,0,10,0"/>
+            <RadioButton Content="Ausleihe" GroupName="Action" Margin="0,0,10,0"/>
+            <RadioButton Content="Rückgabe" GroupName="Action"/>
+        </StackPanel>
+
+        <!-- Student ID Field -->
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Margin="10,100,0,0">
+            <TextBlock Text="Schülerausweisnummer:" VerticalAlignment="Center" Margin="0,0,10,0"/>
+            <TextBox Width="200"/>
+        </StackPanel>
+
+        <!-- Book Number Entry and Add Button -->
+        <StackPanel VerticalAlignment="Top" Margin="10,140,0,0">
+            <TextBlock Text="Bücher hinzufügen:" FontWeight="Bold" Margin="0,0,0,5"/>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Buchnummer:" VerticalAlignment="Center" Margin="0,0,10,0"/>
+                <TextBox Width="100" Margin="0,0,5,0"/>
+                <Button Content="Add" Width="50"/>
+            </StackPanel>
+        </StackPanel>
+
+        <!-- Selected Books List -->
+        <StackPanel VerticalAlignment="Top" Margin="10,200,0,0">
+            <TextBlock Text="Ausgewählte Bücher:" FontWeight="Bold" Margin="0,0,0,5"/>
+            <ListBox Height="80">
+                <ListBoxItem Content="Einführung in C# (00001)"/>
+                <ListBoxItem Content="Der Prozess (00002)"/>
+                <ListBoxItem Content="Krieg und Frieden (00003)"/>
+            </ListBox>
+        </StackPanel>
+
+        <!-- Verification Information -->
+        <StackPanel VerticalAlignment="Top" Margin="10,300,0,0">
+            <TextBlock Text="Verifizierung:" FontWeight="Bold" Margin="0,0,0,5"/>
+            <TextBlock Text="Schülername: Max Mustermann" Margin="10,0,0,0"/>
+        </StackPanel>
+
+        <!-- Confirm Button -->
+        <Button Content="Bestätigen" Width="100" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,10,0,0"/>
+    </Grid>
+</Window>

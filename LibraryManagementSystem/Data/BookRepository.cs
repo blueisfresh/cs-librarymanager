@@ -11,17 +11,17 @@ namespace LibraryManagementSystem.Data
 {
     public class BookRepository
     {
-        private readonly DatabaseConnection _databaseConnection;
+        private readonly SqlConnection _databaseConnection;
 
         public BookRepository(string connectionString)
         {
-            _databaseConnection = DatabaseConnection.GetInstance(connectionString);
+            _databaseConnection = DatabaseConnection.Instance.GetConnection();
         }
 
         public void AddBook(Book book)
         {
-            using (var connection = _databaseConnection.GetConnection())
-            using (var command = new SqlCommand("INSERT INTO TblBook (BookNum, Title, Author, Publisher, ISBN, PublicationPlace, PublicationDate) VALUES (@BookNum, @Title, @Author, @Publisher, @ISBN, @PublicationPlace, @PublicationDate)", connection))
+
+            using (var command = new SqlCommand("INSERT INTO TblBook (BookNum, Title, Author, Publisher, ISBN, PublicationPlace, PublicationDate) VALUES (@BookNum, @Title, @Author, @Publisher, @ISBN, @PublicationPlace, @PublicationDate)", _databaseConnection))
             {
                 command.Parameters.AddWithValue("@BookNum", book.BookNum);
                 command.Parameters.AddWithValue("@Title", book.Title);
@@ -37,8 +37,7 @@ namespace LibraryManagementSystem.Data
 
         public void UpdateBook(Book book)
         {
-            using (var connection = _databaseConnection.GetConnection())
-            using (var command = new SqlCommand("UPDATE TblBook SET Title = @Title, Author = @Author, Publisher = @Publisher, ISBN = @ISBN, PublicationPlace = @PublicationPlace, PublicationDate = @PublicationDate WHERE BookNum = @BookNum", connection))
+            using (var command = new SqlCommand("UPDATE TblBook SET Title = @Title, Author = @Author, Publisher = @Publisher, ISBN = @ISBN, PublicationPlace = @PublicationPlace, PublicationDate = @PublicationDate WHERE BookNum = @BookNum", _databaseConnection))
             {
                 command.Parameters.AddWithValue("@BookNum", book.BookNum);
                 command.Parameters.AddWithValue("@Title", book.Title);
@@ -54,8 +53,7 @@ namespace LibraryManagementSystem.Data
 
         public void DeleteBook(string bookNum)
         {
-            using (var connection = _databaseConnection.GetConnection())
-            using (var command = new SqlCommand("DELETE FROM TblBook WHERE BookNum = @BookNum", connection))
+            using (var command = new SqlCommand("DELETE FROM TblBook WHERE BookNum = @BookNum", _databaseConnection))
             {
                 command.Parameters.AddWithValue("@BookNum", bookNum);
                 command.ExecuteNonQuery();
@@ -64,8 +62,7 @@ namespace LibraryManagementSystem.Data
 
         public Book GetBookByNum(string bookNum)
         {
-            using (var connection = _databaseConnection.GetConnection())
-            using (var command = new SqlCommand("SELECT * FROM TblBook WHERE BookNum = @BookNum", connection))
+            using (var command = new SqlCommand("SELECT * FROM TblBook WHERE BookNum = @BookNum", _databaseConnection))
             {
                 command.Parameters.AddWithValue("@BookNum", bookNum);
 
@@ -93,8 +90,7 @@ namespace LibraryManagementSystem.Data
         {
             var books = new List<Book>();
 
-            using (var connection = _databaseConnection.GetConnection())
-            using (var command = new SqlCommand("SELECT * FROM TblBook", connection))
+            using (var command = new SqlCommand("SELECT * FROM TblBook", _databaseConnection))
             using (var reader = command.ExecuteReader())
             {
                 while (reader.Read())

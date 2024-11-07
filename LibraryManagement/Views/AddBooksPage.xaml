@@ -1,0 +1,58 @@
+﻿<Window x:Class="LibraryManagement.Views.AddBooksPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Buch hinzufügen" Height="400" Width="400">
+    <Grid Margin="20">
+        <!-- Title -->
+        <TextBlock Text="Buch hinzufügen" FontWeight="Bold" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,20"/>
+
+        <!-- Form Fields -->
+        <Grid Margin="0,60,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Buchnummer -->
+            <TextBlock Text="Buchnummer:" VerticalAlignment="Center" Margin="0,5"/>
+            <TextBox Grid.Column="1" Margin="5"/>
+
+            <!-- Titel -->
+            <TextBlock Text="Titel:" Grid.Row="1" VerticalAlignment="Center" Margin="0,5"/>
+            <TextBox Grid.Row="1" Grid.Column="1" Margin="5"/>
+
+            <!-- Autor -->
+            <TextBlock Text="Autor:" Grid.Row="2" VerticalAlignment="Center" Margin="0,5"/>
+            <TextBox Grid.Row="2" Grid.Column="1" Margin="5"/>
+
+            <!-- Verlag -->
+            <TextBlock Text="Verlag:" Grid.Row="3" VerticalAlignment="Center" Margin="0,5"/>
+            <TextBox Grid.Row="3" Grid.Column="1" Margin="5"/>
+
+            <!-- ISBN -->
+            <TextBlock Text="ISBN:" Grid.Row="4" VerticalAlignment="Center" Margin="0,5"/>
+            <TextBox Grid.Row="4" Grid.Column="1" Margin="5"/>
+
+            <!-- Verlagsort -->
+            <TextBlock Text="Verlagsort:" Grid.Row="5" VerticalAlignment="Center" Margin="0,5"/>
+            <TextBox Grid.Row="5" Grid.Column="1" Margin="5"/>
+
+            <!-- Erscheinungsdatum -->
+            <TextBlock Text="Erscheinungsdatum:" Grid.Row="6" VerticalAlignment="Center" Margin="0,5"/>
+            <TextBox Grid.Row="6" Grid.Column="1" Margin="5"/>
+        </Grid>
+
+        <!-- Save Button -->
+        <Button Content="Speichern" Width="100" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,10,0,0" Grid.Row="7"/>
+    </Grid>
+</Window>

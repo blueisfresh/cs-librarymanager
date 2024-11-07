@@ -1,57 +1,49 @@
 ﻿using System;
 using System.Data.SqlClient;
+using System.Configuration;
 
-namespace LibraryManagementSystem.Data
+public sealed class DatabaseConnection
 {
-    public class DatabaseConnection
+    // Static variable to hold the single instance of the DatabaseConnection
+    private static readonly Lazy<DatabaseConnection> instance =
+        new Lazy<DatabaseConnection>(() => new DatabaseConnection());
+
+    // SqlConnection instance
+    private Microsoft.Data.SqlClient.SqlConnection connection;
+
+    // Private constructor to prevent direct instantiation
+    private DatabaseConnection()
     {
-        private static DatabaseConnection _instance;
-        private static readonly object _lock = new object();
+        string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=LibraryManagementDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;";
+        connection = new Microsoft.Data.SqlClient.SqlConnection(connectionString);
+    }
 
-        private Microsoft.Data.SqlClient.SqlConnection _connection;
-        private readonly string _connectionString;
-
-        // Private constructor to prevent instantiation from outside
-        private DatabaseConnection(string connectionString)
+    // Public static property to get the single instance of DatabaseConnection
+    public static DatabaseConnection Instance
+    {
+        get
         {
-            _connectionString = connectionString;
-            _connection = new Microsoft.Data.SqlClient.SqlConnection(_connectionString);
+            return instance.Value;
         }
+    }
 
-        // Public static method to get the single instance of DatabaseConnection
-        public static DatabaseConnection GetInstance(string connectionString)
+    // Method to get the SqlConnection instance
+    public Microsoft.Data.SqlClient.SqlConnection GetConnection()
+    {
+        if (connection.State == System.Data.ConnectionState.Closed ||
+            connection.State == System.Data.ConnectionState.Broken)
         {
-            // Double-checked locking to ensure thread safety
-            if (_instance == null)
-            {
-                lock (_lock)
-                {
-                    if (_instance == null)
-                    {
-                        _instance = new DatabaseConnection(connectionString);
-                    }
-                }
-            }
-            return _instance;
+            connection.Open();
         }
+        return connection;
+    }
 
-        // Method to open the connection if it's not already open
-        public Microsoft.Data.SqlClient.SqlConnection GetConnection()
+    // Method to close the connection
+    public void CloseConnection()
+    {
+        if (connection != null && connection.State == System.Data.ConnectionState.Open)
         {
-            if (_connection.State == System.Data.ConnectionState.Closed)
-            {
-                _connection.Open();
-            }
-            return _connection;
-        }
-
-        // Optional method to close the connection when done
-        public void CloseConnection()
-        {
-            if (_connection.State == System.Data.ConnectionState.Open)
-            {
-                _connection.Close();
-            }
+            connection.Close();
         }
     }
 }
