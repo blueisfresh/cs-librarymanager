@@ -44,16 +44,56 @@ namespace LibraryManagementSystem.Data
             }
         }
 
-        public void ReturnBook(int borrowId)
+        public List<KeyValuePair<string, int>> GetTopBorrowedBooks(int topCount)
         {
-            string query = "UPDATE TblBorrow SET ReturnDate = @ReturnDate WHERE BorrowID = @BorrowID";
+            var topBorrowedBooks = new List<KeyValuePair<string, int>>();
+            string query = @"SELECT TOP (@TopCount) BookBookNum, COUNT(*) AS BorrowCount
+                     FROM TblBorrow
+                     GROUP BY BookBookNum
+                     ORDER BY BorrowCount DESC";
+
             using (var command = new SqlCommand(query, _databaseConnection))
             {
+                command.Parameters.AddWithValue("@TopCount", topCount);
+                using (var reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        var bookNum = reader["BookBookNum"].ToString();
+                        var borrowCount = (int)reader["BorrowCount"];
+                        topBorrowedBooks.Add(new KeyValuePair<string, int>(bookNum, borrowCount));
+                    }
+                }
+            }
+
+            return topBorrowedBooks;
+        }
+
+
+        public void ReturnBook(int borrowId)
+        {
+            // Define the "Anonym" student ID based on the database value
+            string anonymStudentLibraryCardNum = "0"; // Matches the single zero in the database
+
+            // SQL query to update the `ReturnDate` and set the `StudentLibraryCardNum` to "Anonym"
+            string query = @"
+        UPDATE TblBorrow 
+        SET ReturnDate = @ReturnDate, 
+            StudentLibraryCardNum = @AnonymStudentLibraryCardNum
+        WHERE BorrowID = @BorrowID";
+
+            using (var command = new SqlCommand(query, _databaseConnection))
+            {
+                // Set parameters
                 command.Parameters.AddWithValue("@ReturnDate", DateTime.Now);
+                command.Parameters.AddWithValue("@AnonymStudentLibraryCardNum", anonymStudentLibraryCardNum);
                 command.Parameters.AddWithValue("@BorrowID", borrowId);
+
+                // Execute the update
                 command.ExecuteNonQuery();
             }
         }
+
 
         public List<Borrow> GetBorrowedBooksByStudent(int studentLibraryCardNum)
         {
@@ -76,13 +116,41 @@ namespace LibraryManagementSystem.Data
                             DueDate = Convert.ToDateTime(reader["DueDate"]),
                             ReturnDate = reader["ReturnDate"] == DBNull.Value ? null : (DateTime?)reader["ReturnDate"]
 
-                    });
+                        });
                     }
                 }
             }
 
             return borrowedBooks;
         }
+
+        public List<Borrow> GetAllBorrowedBooks()
+        {
+            string query = "SELECT * FROM TblBorrow WHERE ReturnDate IS NULL";
+            var borrowedBooks = new List<Borrow>();
+
+            using (var command = new SqlCommand(query, _databaseConnection))
+            {
+                using (var reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        borrowedBooks.Add(new Borrow
+                        {
+                            BorrowID = Convert.ToInt32(reader["BorrowID"]),
+                            StudentLibraryCardNum = Convert.ToInt32(reader["StudentLibraryCardNum"]),
+                            BookBookNum = reader["BookBookNum"].ToString(),
+                            BorrowDate = Convert.ToDateTime(reader["BorrowDate"]),
+                            DueDate = Convert.ToDateTime(reader["DueDate"]),
+                            ReturnDate = reader["ReturnDate"] == DBNull.Value ? null : (DateTime?)reader["ReturnDate"]
+                        });
+                    }
+                }
+            }
+
+            return borrowedBooks;
+        }
+
 
         public List<Borrow> GetOverdueBooks()
         {
@@ -104,7 +172,7 @@ namespace LibraryManagementSystem.Data
                             BorrowDate = Convert.ToDateTime(reader["BorrowDate"]),
                             DueDate = Convert.ToDateTime(reader["DueDate"]),
                             ReturnDate = reader["ReturnDate"] == DBNull.Value ? null : (DateTime?)reader["ReturnDate"]
-                    });
+                        });
                     }
                 }
             }

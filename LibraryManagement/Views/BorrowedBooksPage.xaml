@@ -1,19 +1,16 @@
 ﻿<Page x:Class="LibraryManagement.Views.BorrowedBooksPage"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Ausgeliehene Bücher" Height="500" Width="600">
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="Ausgeliehene Bücher" Height="500" Width="600">
     <Grid Margin="20">
-        <!-- Title -->
         <TextBlock Text="Ausgeliehene Bücher" FontWeight="Bold" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,20"/>
 
-        <!-- Search Field -->
         <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Margin="10,60,0,0">
             <TextBlock Text="Suchfeld:" VerticalAlignment="Center" Margin="0,0,10,0"/>
             <TextBox Width="300"/>
         </StackPanel>
 
-        <!-- DataGrid for Borrowed Books List -->
-        <DataGrid Name="BorrowedBooksDataGrid" Margin="10,100,10,60" AutoGenerateColumns="False" IsReadOnly="True">
+        <DataGrid Name="BorrowedBooksDataGrid" ItemsSource="{Binding BorrowedBooks}" Margin="10,100,10,60" AutoGenerateColumns="False" IsReadOnly="True">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Buchnummer" Binding="{Binding Buchnummer}" Width="100"/>
                 <DataGridTextColumn Header="Titel" Binding="{Binding Titel}" Width="150"/>
@@ -23,7 +20,6 @@
             </DataGrid.Columns>
         </DataGrid>
 
-        <!-- Back to Main Menu Button -->
         <Button Content="Zurück zum Hauptmenü" Width="180" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,10,0,0"/>
     </Grid>
 </Page>

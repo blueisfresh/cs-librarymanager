@@ -6,39 +6,14 @@
         <!-- Title -->
         <TextBlock Text="Statistik" FontWeight="Bold" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,20"/>
 
-        <!-- Monthly Borrowings Section -->
-        <StackPanel VerticalAlignment="Top" Margin="10,60,0,0">
-            <TextBlock Text="Monatliche Ausleihen:" FontWeight="Bold" Margin="0,0,0,5"/>
-            <TextBlock Text="Januar      120" Margin="10,0,0,0"/>
-            <TextBlock Text="Februar     100" Margin="10,0,0,0"/>
-            <TextBlock Text="März        130" Margin="10,0,0,0"/>
-        </StackPanel>
-
-        <!-- Average Borrowing Duration Section -->
-        <StackPanel VerticalAlignment="Top" Margin="10,160,0,0">
-            <TextBlock Text="Durchschnittliche Ausleihdauer:" FontWeight="Bold" Margin="0,0,0,5"/>
-            <TextBlock Text="14 Tage" Margin="10,0,0,0"/>
-        </StackPanel>
-
-        <!-- Most Popular Categories Section -->
-        <StackPanel VerticalAlignment="Top" Margin="10,220,0,0">
-            <TextBlock Text="Häufigste Fachgebiete:" FontWeight="Bold" Margin="0,0,0,5"/>
-            <TextBlock Text="1. Informatik" Margin="10,0,0,0"/>
-            <TextBlock Text="2. Mathematik" Margin="10,0,0,0"/>
-            <TextBlock Text="3. Geschichte" Margin="10,0,0,0"/>
-        </StackPanel>
-
-        <!-- Most Borrowed Books Section -->
-        <StackPanel VerticalAlignment="Top" Margin="10,300,0,0">
-            <TextBlock Text="Meist ausgeliehene Bücher:" FontWeight="Bold" Margin="0,0,0,5"/>
-            <TextBlock Text="1. Einführung in C#      35x" Margin="10,0,0,0"/>
-            <TextBlock Text="2. Der Prozess           28x" Margin="10,0,0,0"/>
-            <TextBlock Text="3. Moby Dick             25x" Margin="10,0,0,0"/>
-            <TextBlock Text="4. Die Odyssee           20x" Margin="10,0,0,0"/>
-            <TextBlock Text="5. Faust                 18x" Margin="10,0,0,0"/>
-        </StackPanel>
-
-        <!-- Back to Main Menu Button -->
-        <Button Content="Zurück zum Hauptmenü" Width="180" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,20,0,0"/>
+        <!-- ListView with headers -->
+        <ListView ItemsSource="{Binding MostBorrowedBooks}" Margin="0,50,0,0">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Buchnummer" Width="200" DisplayMemberBinding="{Binding Key}" />
+                    <GridViewColumn Header="Anzahl der Ausleihen" Width="150" DisplayMemberBinding="{Binding Value}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
     </Grid>
 </Page>

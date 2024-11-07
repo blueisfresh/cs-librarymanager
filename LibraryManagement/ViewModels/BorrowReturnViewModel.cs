@@ -144,7 +144,7 @@ namespace LibraryManagement.ViewModels
 
         private Book GetBookByNumber(string bookNumber)
         {
-            return new Book { BookNum = bookNumber, Title = "Sample Book" };
+            return new Book { BookNum = bookNumber, Title = bookNumber };
         }
 
         private void BorrowBook(Book book)

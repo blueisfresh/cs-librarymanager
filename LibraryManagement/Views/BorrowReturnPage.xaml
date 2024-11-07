@@ -26,7 +26,7 @@
         </StackPanel>
 
         <StackPanel VerticalAlignment="Top" Margin="10,200,0,0" Visibility="{Binding IsBorrowingVisible}">
-            <TextBlock Text="Rückgabedatum:" VerticalAlignment="Center" FontWeight="Bold" Margin="0,0,0,5"/>
+            <TextBlock Text="Leihdatum:" VerticalAlignment="Center" FontWeight="Bold" Margin="0,0,0,5"/>
             <DatePicker SelectedDate="{Binding DueDate, UpdateSourceTrigger=PropertyChanged}" Width="150"/>
         </StackPanel>
 
