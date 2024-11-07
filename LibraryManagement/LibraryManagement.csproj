@@ -9,11 +9,31 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\books.png" />
+    <None Remove="Resources\borrowed_books.png" />
+    <None Remove="Resources\borrow_return.png" />
+    <None Remove="Resources\home.png" />
+    <None Remove="Resources\import_export.png" />
+    <None Remove="Resources\statistics.png" />
+    <None Remove="Resources\students.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="8.0.1" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\LibraryManagementSystem\LibraryManagementSystem.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\books.png" />
+    <Resource Include="Resources\borrowed_books.png" />
+    <Resource Include="Resources\borrow_return.png" />
+    <Resource Include="Resources\home.png" />
+    <Resource Include="Resources\import_export.png" />
+    <Resource Include="Resources\statistics.png" />
+    <Resource Include="Resources\students.png" />
   </ItemGroup>
 
 </Project>

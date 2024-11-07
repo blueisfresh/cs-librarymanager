@@ -10,10 +10,10 @@
     <Compile Update="Components\NavigationControl.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\AddBooksPage.xaml.cs">
+    <Compile Update="Views\AddBooksWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\AddStudentsPage.xaml.cs">
+    <Compile Update="Views\AddStudentWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\BooksPage.xaml.cs">
@@ -42,10 +42,10 @@
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\AddBooksPage.xaml">
+    <Page Update="Views\AddBooksWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\AddStudentsPage.xaml">
+    <Page Update="Views\AddStudentWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\BooksPage.xaml">

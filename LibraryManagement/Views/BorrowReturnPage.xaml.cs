@@ -17,7 +17,7 @@ namespace LibraryManagement.Views
     /// <summary>
     /// Interaction logic for BorrowReturnPage.xaml
     /// </summary>
-    public partial class BorrowReturnPage : Window
+    public partial class BorrowReturnPage : Page
     {
         public BorrowReturnPage()
         {

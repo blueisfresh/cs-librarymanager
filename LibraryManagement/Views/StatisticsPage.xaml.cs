@@ -17,7 +17,7 @@ namespace LibraryManagement.Views
     /// <summary>
     /// Interaction logic for StatisticsPage.xaml
     /// </summary>
-    public partial class StatisticsPage : Window
+    public partial class StatisticsPage : Page
     {
         public StatisticsPage()
         {

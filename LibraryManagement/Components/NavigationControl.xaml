@@ -3,14 +3,28 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              Width="50" Background="#F0F0F0">
     <StackPanel VerticalAlignment="Top">
-        <!-- Sidebar Buttons with Icons -->
-        <Button Content="🏠" ToolTip="Home" Command="{Binding NavigateCommand}" CommandParameter="HomePage" Width="40" Height="40" Margin="5"/>
-        <Button Content="📚" ToolTip="Bücherverwaltung" Command="{Binding NavigateCommand}" CommandParameter="BooksPage" Width="40" Height="40" Margin="5"/>
-        <Button Content="👥" ToolTip="Schülerverwaltung" Command="{Binding NavigateCommand}" CommandParameter="StudentsPage" Width="40" Height="40" Margin="5"/>
-        <Button Content="📅" ToolTip="Ausleihe / Rückgabe" Command="{Binding NavigateCommand}" CommandParameter="BorrowReturnPage" Width="40" Height="40" Margin="5"/>
-        <Button Content="📊" ToolTip="Statistik" Command="{Binding NavigateCommand}" CommandParameter="StatisticsPage" Width="40" Height="40" Margin="5"/>
-        <Button Content="📂" ToolTip="Ausgeliehene Bücher" Command="{Binding NavigateCommand}" CommandParameter="BorrowedBooksPage" Width="40" Height="40" Margin="5"/>
-        <Button Content="🔄" ToolTip="Exportieren" Command="{Binding NavigateCommand}" CommandParameter="ExportPage" Width="40" Height="40" Margin="5"/>
-        <Button Content="⬆️" ToolTip="Importieren" Command="{Binding NavigateCommand}" CommandParameter="ImportPage" Width="40" Height="40" Margin="5"/>
+        <!-- Sidebar Buttons with Images -->
+        <Button ToolTip="Home" Command="{Binding NavigateCommand}" CommandParameter="HomePage" Width="40" Height="40" Margin="5">
+            <Image Source="pack://application:,,,/Resources/home.png" Width="24" Height="24"/>
+        </Button>
+        <Button ToolTip="Bücherverwaltung" Command="{Binding NavigateCommand}" CommandParameter="BooksPage" Width="40" Height="40" Margin="5">
+            <Image Source="pack://application:,,,/Resources/books.png" Width="24" Height="24"/>
+        </Button>
+        <Button ToolTip="Schülerverwaltung" Command="{Binding NavigateCommand}" CommandParameter="StudentsPage" Width="40" Height="40" Margin="5">
+            <Image Source="pack://application:,,,/Resources/students.png" Width="24" Height="24"/>
+        </Button>
+        <Button ToolTip="Ausleihe / Rückgabe" Command="{Binding NavigateCommand}" CommandParameter="BorrowReturnPage" Width="40" Height="40" Margin="5">
+            <Image Source="pack://application:,,,/Resources/borrow_return.png" Width="24" Height="24"/>
+        </Button>
+        <Button ToolTip="Statistik" Command="{Binding NavigateCommand}" CommandParameter="StatisticsPage" Width="40" Height="40" Margin="5">
+            <Image Source="pack://application:,,,/Resources/statistics.png" Width="24" Height="24"/>
+        </Button>
+        <Button ToolTip="Ausgeliehene Bücher" Command="{Binding NavigateCommand}" CommandParameter="BorrowedBooksPage" Width="40" Height="40" Margin="5">
+            <Image Source="pack://application:,,,/Resources/borrowed_books.png" Width="24" Height="24"/>
+        </Button>
+        <!-- Combined Import/Export Button -->
+        <Button ToolTip="Import/Export" Command="{Binding NavigateCommand}" CommandParameter="ImportExportPage" Width="40" Height="40" Margin="5">
+            <Image Source="pack://application:,,,/Resources/import_export.png" Width="24" Height="24"/>
+        </Button>
     </StackPanel>
 </UserControl>

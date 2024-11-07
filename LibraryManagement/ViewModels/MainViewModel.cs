@@ -19,11 +19,21 @@ namespace LibraryManagement.ViewModels
         private void Navigate(object parameter)
         {
             string pageName = parameter as string;
+
             if (string.IsNullOrEmpty(pageName))
                 return;
 
-            Uri pageUri = new Uri($"/Views/{pageName}.xaml", UriKind.Relative);
-            _mainFrame.Navigate(pageUri);
+            if (pageName == "HomePage")
+            {
+                // Clear the content of the Frame (essentially "killing" any page)
+                _mainFrame.Content = null;
+            }
+            else
+            {
+                // Navigate to the specified page
+                Uri pageUri = new Uri($"/Views/{pageName}.xaml", UriKind.Relative);
+                _mainFrame.Navigate(pageUri);
+            }
         }
     }
 }

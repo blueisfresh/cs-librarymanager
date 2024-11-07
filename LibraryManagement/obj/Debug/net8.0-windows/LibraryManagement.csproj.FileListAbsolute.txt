@@ -1,8 +1,9 @@
 C:\Users\elias\Desktop\zweite Blockwoche\LibraryManagement\LibraryManagement\obj\Debug\net8.0-windows\LibraryManagement.csproj.AssemblyReference.cache
 C:\Users\elias\Desktop\zweite Blockwoche\LibraryManagement\LibraryManagement\obj\Debug\net8.0-windows\Components\NavigationControl.baml
 C:\Users\elias\Desktop\zweite Blockwoche\LibraryManagement\LibraryManagement\obj\Debug\net8.0-windows\Views\AddBooksPage.baml
+C:\Users\elias\Desktop\zweite Blockwoche\LibraryManagement\LibraryManagement\obj\Debug\net8.0-windows\Views\AddBooksWindow.baml
 C:\Users\elias\Desktop\zweite Blockwoche\LibraryManagement\LibraryManagement\obj\Debug\net8.0-windows\Views\AddStudentsPage.baml
-C:\Users\elias\Desktop\zweite Blockwoche\LibraryManagement\LibraryManagement\obj\Debug\net8.0-windows\Views\BooksPage.baml
+C:\Users\elias\Desktop\zweite Blockwoche\LibraryManagement\LibraryManagement\obj\Debug\net8.0-windows\Views\AddStudentWindow.baml
 C:\Users\elias\Desktop\zweite Blockwoche\LibraryManagement\LibraryManagement\obj\Debug\net8.0-windows\Views\BorrowedBooksPage.baml
 C:\Users\elias\Desktop\zweite Blockwoche\LibraryManagement\LibraryManagement\obj\Debug\net8.0-windows\Views\BorrowReturnPage.baml
 C:\Users\elias\Desktop\zweite Blockwoche\LibraryManagement\LibraryManagement\obj\Debug\net8.0-windows\Views\ImportExportPage.baml
@@ -11,7 +12,9 @@ C:\Users\elias\Desktop\zweite Blockwoche\LibraryManagement\LibraryManagement\obj
 C:\Users\elias\Desktop\zweite Blockwoche\LibraryManagement\LibraryManagement\obj\Debug\net8.0-windows\Components\NavigationControl.g.cs
 C:\Users\elias\Desktop\zweite Blockwoche\LibraryManagement\LibraryManagement\obj\Debug\net8.0-windows\MainWindow.g.cs
 C:\Users\elias\Desktop\zweite Blockwoche\LibraryManagement\LibraryManagement\obj\Debug\net8.0-windows\Views\AddBooksPage.g.cs
+C:\Users\elias\Desktop\zweite Blockwoche\LibraryManagement\LibraryManagement\obj\Debug\net8.0-windows\Views\AddBooksWindow.g.cs
 C:\Users\elias\Desktop\zweite Blockwoche\LibraryManagement\LibraryManagement\obj\Debug\net8.0-windows\Views\AddStudentsPage.g.cs
+C:\Users\elias\Desktop\zweite Blockwoche\LibraryManagement\LibraryManagement\obj\Debug\net8.0-windows\Views\AddStudentWindow.g.cs
 C:\Users\elias\Desktop\zweite Blockwoche\LibraryManagement\LibraryManagement\obj\Debug\net8.0-windows\Views\BooksPage.g.cs
 C:\Users\elias\Desktop\zweite Blockwoche\LibraryManagement\LibraryManagement\obj\Debug\net8.0-windows\Views\BorrowedBooksPage.g.cs
 C:\Users\elias\Desktop\zweite Blockwoche\LibraryManagement\LibraryManagement\obj\Debug\net8.0-windows\Views\BorrowReturnPage.g.cs
@@ -19,6 +22,7 @@ C:\Users\elias\Desktop\zweite Blockwoche\LibraryManagement\LibraryManagement\obj
 C:\Users\elias\Desktop\zweite Blockwoche\LibraryManagement\LibraryManagement\obj\Debug\net8.0-windows\Views\StatisticsPage.g.cs
 C:\Users\elias\Desktop\zweite Blockwoche\LibraryManagement\LibraryManagement\obj\Debug\net8.0-windows\Views\StudentsPage.g.cs
 C:\Users\elias\Desktop\zweite Blockwoche\LibraryManagement\LibraryManagement\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\elias\Desktop\zweite Blockwoche\LibraryManagement\LibraryManagement\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
 C:\Users\elias\Desktop\zweite Blockwoche\LibraryManagement\LibraryManagement\obj\Debug\net8.0-windows\LibraryManagement_MarkupCompile.cache
 C:\Users\elias\Desktop\zweite Blockwoche\LibraryManagement\LibraryManagement\obj\Debug\net8.0-windows\LibraryManagement_MarkupCompile.lref
 C:\Users\elias\Desktop\zweite Blockwoche\LibraryManagement\LibraryManagement\bin\Debug\net8.0-windows\LibraryManagement.exe
@@ -66,6 +70,7 @@ C:\Users\elias\Desktop\zweite Blockwoche\LibraryManagement\LibraryManagement\bin
 C:\Users\elias\Desktop\zweite Blockwoche\LibraryManagement\LibraryManagement\bin\Debug\net8.0-windows\LibraryManagementSystem.dll
 C:\Users\elias\Desktop\zweite Blockwoche\LibraryManagement\LibraryManagement\bin\Debug\net8.0-windows\LibraryManagementSystem.pdb
 C:\Users\elias\Desktop\zweite Blockwoche\LibraryManagement\LibraryManagement\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\elias\Desktop\zweite Blockwoche\LibraryManagement\LibraryManagement\obj\Debug\net8.0-windows\Views\BooksPage.baml
 C:\Users\elias\Desktop\zweite Blockwoche\LibraryManagement\LibraryManagement\obj\Debug\net8.0-windows\LibraryManagement.g.resources
 C:\Users\elias\Desktop\zweite Blockwoche\LibraryManagement\LibraryManagement\obj\Debug\net8.0-windows\LibraryManagement.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\elias\Desktop\zweite Blockwoche\LibraryManagement\LibraryManagement\obj\Debug\net8.0-windows\LibraryManagement.AssemblyInfoInputs.cache
@@ -77,4 +82,3 @@ C:\Users\elias\Desktop\zweite Blockwoche\LibraryManagement\LibraryManagement\obj
 C:\Users\elias\Desktop\zweite Blockwoche\LibraryManagement\LibraryManagement\obj\Debug\net8.0-windows\LibraryManagement.pdb
 C:\Users\elias\Desktop\zweite Blockwoche\LibraryManagement\LibraryManagement\obj\Debug\net8.0-windows\LibraryManagement.genruntimeconfig.cache
 C:\Users\elias\Desktop\zweite Blockwoche\LibraryManagement\LibraryManagement\obj\Debug\net8.0-windows\ref\LibraryManagement.dll
-C:\Users\elias\Desktop\zweite Blockwoche\LibraryManagement\LibraryManagement\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs

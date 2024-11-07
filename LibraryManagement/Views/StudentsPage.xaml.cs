@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LibraryManagement.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,11 +18,12 @@ namespace LibraryManagement.Views
     /// <summary>
     /// Interaction logic for StudentsPage.xaml
     /// </summary>
-    public partial class StudentsPage : Window
+    public partial class StudentsPage : Page
     {
         public StudentsPage()
         {
             InitializeComponent();
+            DataContext = new StudentsViewModel();
         }
     }
 }

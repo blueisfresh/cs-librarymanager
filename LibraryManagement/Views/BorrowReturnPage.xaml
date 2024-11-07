@@ -1,4 +1,4 @@
-﻿<Window x:Class="LibraryManagement.Views.BorrowReturnPage"
+﻿<Page x:Class="LibraryManagement.Views.BorrowReturnPage"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Ausleihe / Rückgabe" Height="500" Width="400">
@@ -48,4 +48,4 @@
         <!-- Confirm Button -->
         <Button Content="Bestätigen" Width="100" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,10,0,0"/>
     </Grid>
-</Window>
+</Page>

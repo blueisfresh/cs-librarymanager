@@ -17,7 +17,7 @@ namespace LibraryManagement.Views
     /// <summary>
     /// Interaction logic for ImportExportPage.xaml
     /// </summary>
-    public partial class ImportExportPage : Window
+    public partial class ImportExportPage : Page
     {
         public ImportExportPage()
         {
