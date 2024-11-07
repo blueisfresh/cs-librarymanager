@@ -23,7 +23,7 @@ namespace LibraryManagement.Views
         public StudentsPage()
         {
             InitializeComponent();
-            DataContext = new StudentsViewModel();
+            DataContext = new StudentsViewModel(); // Set DataContext to StudentsViewModel
         }
     }
 }

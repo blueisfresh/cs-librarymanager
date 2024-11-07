@@ -52,7 +52,7 @@ namespace LibraryManagement.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/LibraryManagement;V1.0.0.0;component/views/importexportpage.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/LibraryManagement;component/views/importexportpage.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\ImportExportPage.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -60,7 +60,7 @@ namespace LibraryManagement.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/LibraryManagement;V1.0.0.0;component/views/borrowedbookspage.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/LibraryManagement;component/views/borrowedbookspage.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\BorrowedBooksPage.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -28,22 +28,22 @@
         </StackPanel>
 
         <!-- DataGrid for Book List -->
-        <DataGrid Name="BooksDataGrid" Margin="10,150,10,10" AutoGenerateColumns="False" IsReadOnly="True">
+        <DataGrid Name="BooksDataGrid" Margin="10,150,10,10" AutoGenerateColumns="False" IsReadOnly="True"
+          ItemsSource="{Binding Books}" SelectedItem="{Binding SelectedBook}">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Buchnummer" Binding="{Binding Buchnummer}" Width="100"/>
-                <DataGridTextColumn Header="Titel" Binding="{Binding Titel}" Width="200"/>
-                <DataGridTextColumn Header="Autor" Binding="{Binding Autor}" Width="150"/>
-                <DataGridTextColumn Header="Verlag" Binding="{Binding Verlag}" Width="150"/>
+                <DataGridTextColumn Header="Buchnummer" Binding="{Binding BookNum}" Width="100"/>
+                <DataGridTextColumn Header="Titel" Binding="{Binding Title}" Width="200"/>
+                <DataGridTextColumn Header="Autor" Binding="{Binding Author}" Width="150"/>
+                <DataGridTextColumn Header="Verlag" Binding="{Binding Publisher}" Width="150"/>
                 <DataGridTextColumn Header="ISBN" Binding="{Binding ISBN}" Width="100"/>
-                <DataGridTextColumn Header="Verlagsort" Binding="{Binding Verlagsort}" Width="100"/>
-                <DataGridTextColumn Header="Erscheinungsdatum" Binding="{Binding Erscheinungsdatum}" Width="150"/>
-                <!-- Edit and Delete Buttons -->
+                <DataGridTextColumn Header="Verlagsort" Binding="{Binding PublicationPlace}" Width="100"/>
+                <DataGridTextColumn Header="Erscheinungsdatum" Binding="{Binding PublicationDate}" Width="150"/>
                 <DataGridTemplateColumn Header="Aktionen" Width="150">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
                             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                                <Button Content="Bearbeiten" Width="75" Margin="0,0,5,0" Command="{Binding DataContext.EditCommand, RelativeSource={RelativeSource AncestorType=DataGrid}}" CommandParameter="{Binding}"/>
-                                <Button Content="Löschen" Width="75" Command="{Binding DataContext.DeleteCommand, RelativeSource={RelativeSource AncestorType=DataGrid}}" CommandParameter="{Binding}"/>
+                                <Button Content="Bearbeiten" Width="75" Command="{Binding DataContext.EditBookCommand, RelativeSource={RelativeSource AncestorType=DataGrid}}" CommandParameter="{Binding}"/>
+                                <Button Content="Löschen" Width="75" Command="{Binding DataContext.OpenDeleteBookWindowCommand, RelativeSource={RelativeSource AncestorType=DataGrid}}" CommandParameter="{Binding BookNum}"/>
                             </StackPanel>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
@@ -51,8 +51,5 @@
             </DataGrid.Columns>
         </DataGrid>
 
-        <!-- Footer Text -->
-        <TextBlock Text="Klicke auf 'Bearbeiten' für Änderungen oder 'Löschen' zum Entfernen"
-               HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,10"/>
     </Grid>
 </Page>

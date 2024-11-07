@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\elias\Desktop\zweite Blockwoche\LibraryManagement\LibraryManagement\App.xaml
-121976983577
+111992719226
 
-221073867339
+22185036758
 215-354946975
-Components\NavigationControl.xaml;MainWindow.xaml;Views\AddBooksPage.xaml;Views\AddBooksWindow.xaml;Views\AddStudentsPage.xaml;Views\AddStudentWindow.xaml;Views\BooksPage.xaml;Views\BorrowedBooksPage.xaml;Views\BorrowReturnPage.xaml;Views\ImportExportPage.xaml;Views\StatisticsPage.xaml;Views\StudentsPage.xaml;
+Components\NavigationControl.xaml;MainWindow.xaml;Views\AddBooksWindow.xaml;Views\AddStudentWindow.xaml;Views\BooksPage.xaml;Views\BorrowedBooksPage.xaml;Views\BorrowReturnPage.xaml;Views\DeleteBookWindow.xaml;Views\ImportExportPage.xaml;Views\StatisticsPage.xaml;Views\StudentsPage.xaml;
 
 False
 

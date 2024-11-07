@@ -52,7 +52,7 @@ namespace LibraryManagement.Components {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/LibraryManagement;V1.0.0.0;component/components/navigationcontrol.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/LibraryManagement;component/components/navigationcontrol.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Components\NavigationControl.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

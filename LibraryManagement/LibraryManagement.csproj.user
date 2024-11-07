@@ -25,6 +25,9 @@
     <Compile Update="Views\BorrowReturnPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\DeleteBookWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\ImportExportPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -55,6 +58,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\BorrowReturnPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\DeleteBookWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\ImportExportPage.xaml">

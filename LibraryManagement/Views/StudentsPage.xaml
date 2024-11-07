@@ -1,16 +1,16 @@
 ﻿<Page x:Class="LibraryManagement.Views.StudentsPage"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Schülerverwaltung" Height="500" Width="600">
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="Schülerverwaltung" Height="500" Width="600">
     <Grid Margin="10">
         <!-- Header Section -->
         <TextBlock Text="Schülerverwaltung" FontWeight="Bold" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,20"/>
 
         <!-- Insert and Search Buttons -->
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,50,0,0">
-            <!-- StudentsPage.xaml -->
+            <!-- Bind the 'Einfügen' button to open the add student window -->
             <Button Content="Einfügen" Width="100" Margin="0,0,10,0"
-        Command="{Binding OpenAddStudentsWindowCommand}"/>
+                    Command="{Binding OpenAddStudentsWindowCommand}"/>
 
             <Button Content="Suchen" Width="100"/>
         </StackPanel>
@@ -21,26 +21,31 @@
             <TextBox Width="300"/>
         </StackPanel>
 
-        <!-- DataGrid for Student List -->
-        <DataGrid Name="StudentsDataGrid" Margin="10,150,10,10" AutoGenerateColumns="False" IsReadOnly="True">
+        <!-- Updated StudentsPage.xaml DataGrid -->
+        <DataGrid ItemsSource="{Binding Students}" Margin="10,150,10,10" AutoGenerateColumns="False" IsReadOnly="True">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Nachname" Binding="{Binding Nachname}" Width="200"/>
-                <DataGridTextColumn Header="Vorname" Binding="{Binding Vorname}" Width="150"/>
-                <DataGridTextColumn Header="Ausweisnummer" Binding="{Binding Ausweisnummer}" Width="150"/>
+                <DataGridTextColumn Header="Nachname" Binding="{Binding LastName}" Width="200"/>
+                <DataGridTextColumn Header="Vorname" Binding="{Binding FirstName}" Width="150"/>
+                <DataGridTextColumn Header="Ausweisnummer" Binding="{Binding LibraryCardNum}" Width="150"/>
 
                 <!-- Edit and Delete Buttons -->
                 <DataGridTemplateColumn Header="Aktionen" Width="150">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
                             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                                <Button Content="Bearbeiten" Width="75" Margin="0,0,5,0" Command="{Binding DataContext.EditCommand, RelativeSource={RelativeSource AncestorType=DataGrid}}" CommandParameter="{Binding}"/>
-                                <Button Content="Löschen" Width="75" Command="{Binding DataContext.DeleteCommand, RelativeSource={RelativeSource AncestorType=DataGrid}}" CommandParameter="{Binding}"/>
+                                <Button Content="Bearbeiten" Width="75" Margin="0,0,5,0"
+                                Command="{Binding DataContext.EditStudentCommand, RelativeSource={RelativeSource AncestorType=DataGrid}}"
+                                CommandParameter="{Binding}"/>
+                                <Button Content="Löschen" Width="75"
+                                Command="{Binding DataContext.OpenDeleteStudentWindowCommand, RelativeSource={RelativeSource AncestorType=DataGrid}}"
+                                CommandParameter="{Binding}"/>
                             </StackPanel>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
             </DataGrid.Columns>
         </DataGrid>
+
 
         <!-- Footer Text -->
         <TextBlock Text="Klicke auf 'Bearbeiten' für Änderungen oder 'Löschen' zum Entfernen"

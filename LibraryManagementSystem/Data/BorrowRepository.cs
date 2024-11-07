@@ -163,6 +163,39 @@ namespace LibraryManagementSystem.Data
             return borrowedBooks;
         }
 
+        public Borrow GetBorrowRecordByBookNum(string bookNum)
+        {
+            Borrow borrowRecord = null;
+
+            string query = "SELECT BorrowID, StudentLibraryCardNum, BookBookNum, BorrowDate, DueDate " +
+                           "FROM TblBorrow " +
+                           "WHERE BookBookNum = @BookNum AND ReturnDate IS NULL";
+
+            using (var command = new SqlCommand(query, _databaseConnection))
+            {
+                command.Parameters.AddWithValue("@BookNum", bookNum);
+
+                using (var reader = command.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        borrowRecord = new Borrow
+                        {
+                            BorrowID = reader.GetInt32(reader.GetOrdinal("BorrowID")),
+                            StudentLibraryCardNum = reader.GetOrdinal("StudentLibraryCardNum"),
+                            BookBookNum = reader.GetString(reader.GetOrdinal("BookBookNum")),
+                            BorrowDate = reader.GetDateTime(reader.GetOrdinal("BorrowDate")),
+                            DueDate = reader.GetDateTime(reader.GetOrdinal("DueDate"))
+                            // ReturnDate is not set here since we only fetch records with NULL ReturnDate
+                        };
+                    }
+                }
+            }
+
+            return borrowRecord;
+        }
+
+
 
     }
 }

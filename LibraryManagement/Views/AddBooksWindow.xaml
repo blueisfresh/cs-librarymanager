@@ -25,34 +25,34 @@
 
             <!-- Buchnummer -->
             <TextBlock Text="Buchnummer:" VerticalAlignment="Center" Margin="0,5"/>
-            <TextBox Grid.Column="1" Margin="5"/>
+            <TextBox Grid.Column="1" Margin="5" Text="{Binding NewBook.BookNum, UpdateSourceTrigger=PropertyChanged}"/>
 
             <!-- Titel -->
             <TextBlock Text="Titel:" Grid.Row="1" VerticalAlignment="Center" Margin="0,5"/>
-            <TextBox Grid.Row="1" Grid.Column="1" Margin="5"/>
+            <TextBox Grid.Row="1" Grid.Column="1" Margin="5" Text="{Binding NewBook.Title, UpdateSourceTrigger=PropertyChanged}"/>
 
             <!-- Autor -->
             <TextBlock Text="Autor:" Grid.Row="2" VerticalAlignment="Center" Margin="0,5"/>
-            <TextBox Grid.Row="2" Grid.Column="1" Margin="5"/>
+            <TextBox Grid.Row="2" Grid.Column="1" Margin="5" Text="{Binding NewBook.Author, UpdateSourceTrigger=PropertyChanged}"/>
 
             <!-- Verlag -->
             <TextBlock Text="Verlag:" Grid.Row="3" VerticalAlignment="Center" Margin="0,5"/>
-            <TextBox Grid.Row="3" Grid.Column="1" Margin="5"/>
+            <TextBox Grid.Row="3" Grid.Column="1" Margin="5" Text="{Binding NewBook.Publisher, UpdateSourceTrigger=PropertyChanged}"/>
 
             <!-- ISBN -->
             <TextBlock Text="ISBN:" Grid.Row="4" VerticalAlignment="Center" Margin="0,5"/>
-            <TextBox Grid.Row="4" Grid.Column="1" Margin="5"/>
+            <TextBox Grid.Row="4" Grid.Column="1" Margin="5" Text="{Binding NewBook.ISBN, UpdateSourceTrigger=PropertyChanged}"/>
 
             <!-- Verlagsort -->
             <TextBlock Text="Verlagsort:" Grid.Row="5" VerticalAlignment="Center" Margin="0,5"/>
-            <TextBox Grid.Row="5" Grid.Column="1" Margin="5"/>
+            <TextBox Grid.Row="5" Grid.Column="1" Margin="5" Text="{Binding NewBook.PublicationPlace, UpdateSourceTrigger=PropertyChanged}"/>
 
             <!-- Erscheinungsdatum -->
             <TextBlock Text="Erscheinungsdatum:" Grid.Row="6" VerticalAlignment="Center" Margin="0,5"/>
-            <TextBox Grid.Row="6" Grid.Column="1" Margin="5"/>
+            <DatePicker Grid.Row="6" Grid.Column="1" Margin="5" SelectedDate="{Binding NewBook.PublicationDate, UpdateSourceTrigger=PropertyChanged}"/>
         </Grid>
 
         <!-- Save Button -->
-        <Button Content="Speichern" Width="100" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,10,0,0" Grid.Row="7"/>
+        <Button Content="Speichern" Width="100" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,10,0,0" Command="{Binding SaveBookCommand}"/>
     </Grid>
 </Window>
