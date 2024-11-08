@@ -4,6 +4,7 @@ using System.Windows.Input;
 using LibraryManagementSystem.Models;
 using Microsoft.Data.SqlClient;
 using LibraryManagement.Views;
+using System.Windows;
 
 namespace LibraryManagement.ViewModels
 {
@@ -91,12 +92,27 @@ namespace LibraryManagement.ViewModels
 
         private void SearchBooks()
         {
+            // Validate the search term
+            if (string.IsNullOrWhiteSpace(SearchTerm))
+            {
+                MessageBox.Show("Bitte geben Sie einen gültigen Suchbegriff ein.", "Ungültige Suche", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+
+            // Proceed with the search if the term is valid
             var result = _bookRepository.SearchBooksByTitle(SearchTerm);
             Books.Clear();
             foreach (var book in result)
             {
                 Books.Add(book);
             }
+
+            // Display a message if no results were found
+            if (Books.Count == 0)
+            {
+                MessageBox.Show("Keine Bücher gefunden.", "Suche", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
         }
+
     }
 }

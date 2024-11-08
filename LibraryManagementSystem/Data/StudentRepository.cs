@@ -214,5 +214,75 @@ namespace LibraryManagementSystem.Data
 
             return students;
         }
+
+        public List<Student> SearchStudentsByLastName(string lastName)
+        {
+            var students = new List<Student>();
+            string query = @"SELECT * FROM TblStudent WHERE LastName LIKE @LastName";
+
+            try
+            {
+                EnsureConnectionOpen();
+
+                using (var command = new SqlCommand(query, _databaseConnection))
+                {
+                    command.Parameters.AddWithValue("@LastName", "%" + lastName + "%");
+
+                    using (var reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            students.Add(new Student
+                            {
+                                LibraryCardNum = Convert.ToInt32(reader["LibraryCardNum"]),
+                                FirstName = reader["FirstName"].ToString(),
+                                LastName = reader["LastName"].ToString()
+                            });
+                        }
+                    }
+                }
+            }
+            finally
+            {
+                EnsureConnectionClosed();
+            }
+
+            return students;
+        }
+
+        public Student GetStudentByLibraryCardNum(string libraryCardNum)
+        {
+            string query = "SELECT * FROM TblStudent WHERE LibraryCardNum = @LibraryCardNum";
+
+            try
+            {
+                EnsureConnectionOpen();
+
+                using (var command = new SqlCommand(query, _databaseConnection))
+                {
+                    command.Parameters.AddWithValue("@LibraryCardNum", libraryCardNum);
+
+                    using (var reader = command.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            return new Student
+                            {
+                                LibraryCardNum = Convert.ToInt32(reader["LibraryCardNum"]),
+                                FirstName = reader["FirstName"].ToString(),
+                                LastName = reader["LastName"].ToString()
+                            };
+                        }
+                    }
+                }
+            }
+            finally
+            {
+                EnsureConnectionClosed();
+            }
+
+            return null; // Student not found
+        }
+
     }
 }

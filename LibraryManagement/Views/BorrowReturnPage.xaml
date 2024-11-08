@@ -3,20 +3,20 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       Title="Ausleihe / Rückgabe" Height="500" Width="400">
     <Grid Margin="20">
-        <TextBlock Text="Ausleihe / Rückgabe" FontWeight="Bold" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,20"/>
+        <TextBlock Text="Ausleihe / Rückgabe" FontWeight="Bold" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,10"/>
 
-        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Margin="10,60,0,0">
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Margin="10,50,0,0">
             <TextBlock Text="Aktion:" VerticalAlignment="Center" Margin="0,0,10,0"/>
             <RadioButton Content="Ausleihe" GroupName="Action" IsChecked="{Binding IsBorrowing}" Margin="0,0,10,0"/>
             <RadioButton Content="Rückgabe" GroupName="Action" IsChecked="{Binding IsReturning}"/>
         </StackPanel>
 
-        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Margin="10,100,0,0">
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Margin="10,100,0,0" Visibility="{Binding IsReturningVisible}">
             <TextBlock Text="Schülerausweisnummer:" VerticalAlignment="Center" Margin="0,0,10,0"/>
             <TextBox Width="200" Text="{Binding StudentLibraryCardNum, UpdateSourceTrigger=PropertyChanged}"/>
         </StackPanel>
 
-        <StackPanel VerticalAlignment="Top" Margin="10,140,0,0">
+        <StackPanel VerticalAlignment="Top" Margin="10,120,0,0">
             <TextBlock Text="Bücher hinzufügen:" FontWeight="Bold" Margin="0,0,0,5"/>
             <StackPanel Orientation="Horizontal">
                 <TextBlock Text="Buchnummer:" VerticalAlignment="Center" Margin="0,0,10,0"/>
@@ -25,12 +25,7 @@
             </StackPanel>
         </StackPanel>
 
-        <StackPanel VerticalAlignment="Top" Margin="10,200,0,0" Visibility="{Binding IsBorrowingVisible}">
-            <TextBlock Text="Leihdatum:" VerticalAlignment="Center" FontWeight="Bold" Margin="0,0,0,5"/>
-            <DatePicker SelectedDate="{Binding DueDate, UpdateSourceTrigger=PropertyChanged}" Width="150"/>
-        </StackPanel>
-
-        <StackPanel VerticalAlignment="Top" Margin="10,260,0,0">
+        <StackPanel VerticalAlignment="Top" Margin="10,180,0,0">
             <TextBlock Text="Ausgewählte Bücher:" FontWeight="Bold" Margin="0,0,0,5"/>
             <ListBox ItemsSource="{Binding SelectedBooks}" DisplayMemberPath="Title" Height="80"/>
         </StackPanel>

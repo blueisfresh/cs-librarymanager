@@ -1,189 +1,208 @@
-﻿using LibraryManagementSystem.Data;
+﻿using LibraryManagement.Views;
+using LibraryManagement;
+using LibraryManagementSystem.Data;
 using LibraryManagementSystem.Models;
 using Microsoft.Data.SqlClient;
-using System;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using System.Windows;
 using System.Windows.Input;
+using System.Windows;
 
-namespace LibraryManagement.ViewModels
+public class BorrowReturnViewModel : INotifyPropertyChanged
 {
-    public class BorrowReturnViewModel : INotifyPropertyChanged
+    private readonly BorrowRepository _borrowRepository;
+    private readonly BookRepository _bookRepository; // Added BookRepository
+    private readonly StudentRepository _studentRepository;
+    private bool _isBorrowing;
+    private bool _isReturning;
+    private string _bookNumber;
+    private string _studentLibraryCardNum;
+    private DateTime? _dueDate;
+
+    public Visibility IsReturningVisible => IsReturning ? Visibility.Collapsed : Visibility.Visible;
+
+    public event PropertyChangedEventHandler PropertyChanged;
+
+    public BorrowReturnViewModel()
     {
-        private readonly BorrowRepository _borrowRepository;
-        private bool _isBorrowing;
-        private bool _isReturning;
-        private string _bookNumber;
-        private string _studentLibraryCardNum;
-        private DateTime? _dueDate;
+        SqlConnection _dbConnection = DatabaseConnection.Instance.GetConnection();
+        _borrowRepository = new BorrowRepository(_dbConnection.ToString());
+        _bookRepository = new BookRepository(_dbConnection.ToString()); // Initialize BookRepository
+        _studentRepository = new StudentRepository(_dbConnection.ToString());
+        SelectedBooks = new ObservableCollection<Book>();
+        AddBookCommand = new RelayCommand(AddBookToSelectedList);
+        ConfirmActionCommand = new RelayCommand(ExecuteBorrowOrReturn);
+        OpenAddBookWindowCommand = new RelayCommand(OpenAddBookWindow);
+        OpenAddStudentWindowCommand = new RelayCommand(OpenAddStudentWindow);
+    }
 
-        public event PropertyChangedEventHandler PropertyChanged;
+    public ObservableCollection<Book> SelectedBooks { get; set; }
 
-        public BorrowReturnViewModel()
+    public bool IsBorrowing
+    {
+        get => _isBorrowing;
+        set
         {
-            SqlConnection _dbConnection = DatabaseConnection.Instance.GetConnection();
-            _borrowRepository = new BorrowRepository(_dbConnection.ToString());
-            SelectedBooks = new ObservableCollection<Book>();
-            AddBookCommand = new RelayCommand(AddBookToSelectedList);
-            ConfirmActionCommand = new RelayCommand(ExecuteBorrowOrReturn);
+            _isBorrowing = value;
+            OnPropertyChanged();
+            OnPropertyChanged(nameof(IsBorrowingVisible));
         }
+    }
 
-        public ObservableCollection<Book> SelectedBooks { get; set; }
-
-        public bool IsBorrowing
+    public bool IsReturning
+    {
+        get => _isReturning;
+        set
         {
-            get => _isBorrowing;
-            set
-            {
-                _isBorrowing = value;
-                OnPropertyChanged();
-                OnPropertyChanged(nameof(IsBorrowingVisible));
-            }
+            _isReturning = value;
+            OnPropertyChanged();
+            OnPropertyChanged(nameof(IsBorrowingVisible));
+            OnPropertyChanged(nameof(IsReturningVisible));
         }
+    }
 
-        public bool IsReturning
+    public string BookNumber
+    {
+        get => _bookNumber;
+        set
         {
-            get => _isReturning;
-            set
-            {
-                _isReturning = value;
-                OnPropertyChanged();
-                OnPropertyChanged(nameof(IsBorrowingVisible));
-            }
+            _bookNumber = value;
+            OnPropertyChanged();
         }
+    }
 
-        public string BookNumber
+    public string StudentLibraryCardNum
+    {
+        get => _studentLibraryCardNum;
+        set
         {
-            get => _bookNumber;
-            set
-            {
-                _bookNumber = value;
-                OnPropertyChanged();
-            }
+            _studentLibraryCardNum = value;
+            OnPropertyChanged();
         }
+    }
 
-        public string StudentLibraryCardNum
+    public DateTime? DueDate
+    {
+        get => _dueDate;
+        set
         {
-            get => _studentLibraryCardNum;
-            set
-            {
-                _studentLibraryCardNum = value;
-                OnPropertyChanged();
-            }
+            _dueDate = value;
+            OnPropertyChanged();
         }
+    }
 
-        public DateTime? DueDate
+    public Visibility IsBorrowingVisible => IsBorrowing ? Visibility.Visible : Visibility.Collapsed;
+
+    public ICommand AddBookCommand { get; }
+    public ICommand ConfirmActionCommand { get; }
+    public ICommand OpenAddBookWindowCommand { get; }
+    public ICommand OpenAddStudentWindowCommand { get; }
+
+    private void AddBookToSelectedList()
+    {
+        if (!string.IsNullOrEmpty(BookNumber))
         {
-            get => _dueDate;
-            set
+            var book = _bookRepository.GetBookByNum(BookNumber); // Use GetBookByNum from BookRepository
+            if (book != null)
             {
-                _dueDate = value;
-                OnPropertyChanged();
-            }
-        }
-
-        public Visibility IsBorrowingVisible => IsBorrowing ? Visibility.Visible : Visibility.Collapsed;
-
-        public ICommand AddBookCommand { get; }
-        public ICommand ConfirmActionCommand { get; }
-
-        private void AddBookToSelectedList()
-        {
-            if (!string.IsNullOrEmpty(BookNumber))
-            {
-                var book = GetBookByNumber(BookNumber);
-                if (book != null)
-                {
-                    SelectedBooks.Add(book);
-                    BookNumber = string.Empty;
-                }
-                else
-                {
-                    MessageBox.Show("Book not found.");
-                }
-            }
-        }
-
-        private void ExecuteBorrowOrReturn()
-        {
-            if (IsBorrowing)
-            {
-                foreach (var book in SelectedBooks)
-                {
-                    // Assuming you have the required parameters for borrowing.
-                    BorrowBook(book);
-                }
-                MessageBox.Show("Books borrowed successfully.");
-            }
-            else if (IsReturning)
-            {
-                foreach (var book in SelectedBooks)
-                {
-                    // Retrieve the corresponding Borrow record (you'll need to implement this in your repository).
-                    var borrowRecord = _borrowRepository.GetBorrowRecordByBookNum(book.BookNum);
-
-                    if (borrowRecord != null)
-                    {
-                        ReturnBook(borrowRecord);
-                    }
-                    else
-                    {
-                        MessageBox.Show($"No borrow record found for {book.Title}.");
-                    }
-                }
-                MessageBox.Show("Books returned successfully.");
-            }
-
-            // Clear the selected books and reset due date after each operation
-            SelectedBooks.Clear();
-            DueDate = null;
-        }
-
-
-        private Book GetBookByNumber(string bookNumber)
-        {
-            return new Book { BookNum = bookNumber, Title = bookNumber };
-        }
-
-        private void BorrowBook(Book book)
-        {
-            if (DueDate == null)
-            {
-                MessageBox.Show("Please select a due date for borrowing.");
-                return;
-            }
-
-            if (string.IsNullOrEmpty(StudentLibraryCardNum))
-            {
-                MessageBox.Show("Please enter the Student Library Card Number.");
-                return;
-            }
-
-            _borrowRepository.BorrowBook(StudentLibraryCardNum, book.BookNum, DueDate.Value);
-            MessageBox.Show($"Borrowed {book.Title} until {DueDate.Value.ToShortDateString()}.");
-        }
-
-        private void ReturnBook(Borrow borrow)
-        {
-            // Check if the book has a BorrowID associated with it
-            if (borrow.BorrowID != null)
-            {
-                _borrowRepository.ReturnBook(borrow.BorrowID);
-
-                MessageBox.Show($"Succesfull");
+                SelectedBooks.Add(book);
+                BookNumber = string.Empty;
             }
             else
             {
-                MessageBox.Show($"Cannot return - no BorrowID found.");
+                var result = MessageBox.Show("Book not found. Would you like to add this book?", "Book Not Found", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                if (result == MessageBoxResult.Yes)
+                {
+                    OpenAddBookWindow();
+                }
             }
         }
+    }
 
-
-        protected void OnPropertyChanged([CallerMemberName] string propertyName = null)
+    private void ExecuteBorrowOrReturn()
+    {
+        // Validate student existence only when "Bestätigen" is pressed
+        var student = _studentRepository.GetStudentByLibraryCardNum(StudentLibraryCardNum);
+        if (student == null)
         {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+            var result = MessageBox.Show("Student not found. Would you like to add this student?", "Student Not Found", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            if (result == MessageBoxResult.Yes)
+            {
+                var addStudentWindow = new AddStudentWindow();
+                addStudentWindow.ShowDialog();
+            }
+            return;
         }
+
+        if (IsBorrowing)
+        {
+            foreach (var book in SelectedBooks)
+            {
+                BorrowBook(book);
+            }
+            MessageBox.Show("Books borrowed successfully.");
+        }
+        else if (IsReturning)
+        {
+            foreach (var book in SelectedBooks)
+            {
+                var borrowRecord = _borrowRepository.GetBorrowRecordByBookNum(book.BookNum);
+                if (borrowRecord != null)
+                {
+                    ReturnBook(borrowRecord);
+                }
+                else
+                {
+                    MessageBox.Show($"No borrow record found for {book.Title}.");
+                }
+            }
+            MessageBox.Show("Books returned successfully.");
+        }
+
+        SelectedBooks.Clear();
+        DueDate = null;
+    }
+
+    private void BorrowBook(Book book)
+    {
+        if (string.IsNullOrEmpty(StudentLibraryCardNum))
+        {
+            MessageBox.Show("Please enter the Student Library Card Number.");
+            return;
+        }
+
+        _borrowRepository.BorrowBook(StudentLibraryCardNum, book.BookNum, DateTime.Now.AddMonths(3));
+        MessageBox.Show($"Borrowed {book.Title} until {DateTime.Now.AddMonths(3):d}.");
+    }
+
+    private void ReturnBook(Borrow borrow)
+    {
+        if (borrow.BorrowID != null)
+        {
+            _borrowRepository.ReturnBook(borrow.BorrowID);
+            MessageBox.Show("Successfully returned the book.");
+        }
+        else
+        {
+            MessageBox.Show("Cannot return - no BorrowID found.");
+        }
+    }
+
+    private void OpenAddBookWindow()
+    {
+        var addBookWindow = new AddBooksWindow();
+        addBookWindow.ShowDialog();
+    }
+
+    private void OpenAddStudentWindow()
+    {
+        var addStudentWindow = new AddStudentWindow();
+        addStudentWindow.ShowDialog();
+    }
+
+    protected void OnPropertyChanged([CallerMemberName] string propertyName = null)
+    {
+        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
     }
 }

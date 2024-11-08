@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Data.SqlClient;
 using System.Configuration;
+using System.Data.Common;
+using System.Data;
 
 public sealed class DatabaseConnection
 {
@@ -30,8 +32,7 @@ public sealed class DatabaseConnection
     // Method to get the SqlConnection instance
     public Microsoft.Data.SqlClient.SqlConnection GetConnection()
     {
-        if (connection.State == System.Data.ConnectionState.Closed ||
-            connection.State == System.Data.ConnectionState.Broken)
+        if (connection.State == ConnectionState.Closed || connection.State == ConnectionState.Broken)
         {
             connection.Open();
         }

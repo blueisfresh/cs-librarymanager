@@ -51,7 +51,7 @@ namespace LibraryManagement.ViewModels
         public string Buchnummer { get; set; }
         public string Titel { get; set; }
         public string AusgeliehenVon { get; set; }
-        public DateTime Ausleihdatum { get; set; }
-        public DateTime Fristdatum { get; set; }
+        public DateTime? Ausleihdatum { get; set; }
+        public DateTime? Fristdatum { get; set; }
     }
 }

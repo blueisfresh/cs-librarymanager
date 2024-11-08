@@ -22,7 +22,7 @@ namespace LibraryManagement.ViewModels
 
         private void LoadMostBorrowedBooks()
         {
-            MostBorrowedBooks = _borrowRepository.GetTopBorrowedBooks(3);
+            MostBorrowedBooks = _borrowRepository.GetTopBorrowedBooks(10);
             OnPropertyChanged(nameof(MostBorrowedBooks));
         }
 

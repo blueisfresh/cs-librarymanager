@@ -33,7 +33,7 @@ namespace LibraryManagementSystem.Tests
         {
             // Arrange
             string studentLibraryCardNum = "123456";
-            string bookBookNum = "00001-2024";
+            string bookBookNum = "00030-2024";
             DateTime dueDate = DateTime.Now.AddDays(7);
 
             // Act
@@ -50,7 +50,7 @@ namespace LibraryManagementSystem.Tests
         {
             // Arrange
             string studentLibraryCardNum = "123456";
-            string bookBookNum = "00007-2024";
+            string bookBookNum = "0000-2024";
             DateTime dueDate = DateTime.Now.AddDays(7);
 
             // Borrow the book to create a borrow entry

@@ -10,7 +10,9 @@ namespace LibraryManagement.ViewModels
     public class StudentsViewModel
     {
         private readonly StudentRepository _studentRepository;
-        public ObservableCollection<Student> Students { get; set; }
+
+        public ObservableCollection<Student> AllStudents { get; set; }
+        public ObservableCollection<Student> FilteredStudents { get; set; }
 
         public ICommand OpenAddStudentWindowCommand { get; }
         public ICommand EditStudentCommand { get; }
@@ -47,6 +49,7 @@ namespace LibraryManagement.ViewModels
             OpenAddStudentWindowCommand = new RelayCommand(OpenAddStudentWindow);
             OpenDeleteStudentWindowCommand = new RelayCommand(OpenDeleteStudentWindow);
             EditStudentCommand = new RelayCommand(OpenEditStudentWindow);
+            SearchCommand = new RelayCommand(SearchStudents);
 
             LoadStudents();
         }
@@ -54,7 +57,30 @@ namespace LibraryManagement.ViewModels
         private void LoadStudents()
         {
             var studentsList = _studentRepository.GetAllStudents();
-            Students = new ObservableCollection<Student>(studentsList);
+            AllStudents = new ObservableCollection<Student>(studentsList);
+            FilteredStudents = new ObservableCollection<Student>(AllStudents); // Initially, FilteredStudents has all students
+        }
+
+        private void SearchStudents()
+        {
+            if (!string.IsNullOrWhiteSpace(SearchTerm))
+            {
+                var filteredList = _studentRepository.SearchStudentsByLastName(SearchTerm);
+                FilteredStudents.Clear();
+                foreach (var student in filteredList)
+                {
+                    FilteredStudents.Add(student);
+                }
+            }
+            else
+            {
+                // Reset FilteredStudents to show all students
+                FilteredStudents.Clear();
+                foreach (var student in AllStudents)
+                {
+                    FilteredStudents.Add(student);
+                }
+            }
         }
 
         private void OpenAddStudentWindow()
@@ -65,7 +91,7 @@ namespace LibraryManagement.ViewModels
             addStudentWindow.DataContext = addStudentViewModel;
             addStudentWindow.ShowDialog();
 
-            LoadStudents();  // Refresh students list after closing AddStudentWindow, if necessary
+            LoadStudents(); // Refresh students list after closing AddStudentWindow, if necessary
         }
 
         private void OpenDeleteStudentWindow()
@@ -79,13 +105,12 @@ namespace LibraryManagement.ViewModels
             if (SelectedStudent == null) return;
 
             var addStudentWindow = new Views.AddStudentWindow();
-            var addStudentViewModel = new AddStudentViewModel(_studentRepository, SelectedStudent); // Pass SelectedStudent for editing
+            var addStudentViewModel = new AddStudentViewModel(_studentRepository, SelectedStudent);
 
             addStudentWindow.DataContext = addStudentViewModel;
             addStudentWindow.ShowDialog();
 
             LoadStudents(); // Refresh students list after closing the edit window
         }
-
     }
 }

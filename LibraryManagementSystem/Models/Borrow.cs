@@ -13,6 +13,6 @@ namespace LibraryManagementSystem.Models
         public string BookBookNum { get; set; }         // Foreign key referencing Book.BookNum
         public DateTime BorrowDate { get; set; }        // Date the book was borrowed
         public DateTime? ReturnDate { get; set; }        // Date the book was returned
-        public DateTime DueDate { get; set; }           // Due date for returning the book
+        public DateTime? DueDate { get; set; }           // Due date for returning the book
     }
 }

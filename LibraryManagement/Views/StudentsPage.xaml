@@ -11,10 +11,21 @@
             <Button Content="Einfügen" Width="100" Margin="0,0,10,0" Command="{Binding OpenAddStudentWindowCommand}"/>
         </StackPanel>
 
+        <!-- Hint Text for Search -->
+        <TextBlock Text="Hinweis: Sie können nach den Nachnamen suchen, nicht nach der Ausweisnummer." 
+                   Foreground="Gray" FontStyle="Italic" Margin="10,80,0,0" />
+
+        <!-- Search Field -->
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Margin="10,110,0,0">
+            <TextBlock Text="Suchfeld:" VerticalAlignment="Center" Margin="0,0,10,0"/>
+            <TextBox Width="300" Text="{Binding SearchTerm, UpdateSourceTrigger=PropertyChanged}"/>
+            <Button Content="Suchen" Width="75" Margin="10,0,0,0" Command="{Binding SearchCommand}"/>
+        </StackPanel>
+
         <!-- Updated StudentsPage.xaml DataGrid with SelectedItem binding -->
-        <DataGrid ItemsSource="{Binding Students}" 
+        <DataGrid ItemsSource="{Binding FilteredStudents}" 
                   SelectedItem="{Binding SelectedStudent, Mode=TwoWay}" 
-                  Margin="10,100,10,10" 
+                  Margin="10,150,10,10" 
                   AutoGenerateColumns="False" 
                   IsReadOnly="True">
             <DataGrid.Columns>
