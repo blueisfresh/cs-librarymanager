@@ -23,13 +23,38 @@
         </StackPanel>
 
         <!-- DataGrid for Book List -->
-        <DataGrid ItemsSource="{Binding Books}" Margin="10,140,10,20" AutoGenerateColumns="False" IsReadOnly="True">
+        <DataGrid ItemsSource="{Binding Books}"
+          SelectedItem="{Binding SelectedBook, Mode=TwoWay}"
+          Margin="10,140,10,20"
+          AutoGenerateColumns="False"
+          IsReadOnly="True">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Buchnummer" Binding="{Binding BookNum}" Width="100"/>
                 <DataGridTextColumn Header="Titel" Binding="{Binding Title}" Width="200"/>
                 <DataGridTextColumn Header="Autor" Binding="{Binding Author}" Width="150"/>
                 <DataGridTextColumn Header="Verlag" Binding="{Binding Publisher}" Width="150"/>
                 <DataGridTextColumn Header="ISBN" Binding="{Binding ISBN}" Width="150"/>
+
+                <!-- Action Buttons Column -->
+                <DataGridTemplateColumn Header="Aktion" Width="150">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                <!-- Bearbeiten (Edit) Button -->
+                                <Button Content="Bearbeiten" 
+                                        Command="{Binding DataContext.EditBookCommand, RelativeSource={RelativeSource AncestorType=DataGrid}}" 
+                                        CommandParameter="{Binding}" 
+                                        Margin="5,0"/>
+
+                                <!-- Löschen (Delete) Button -->
+                                <Button Content="Löschen" 
+                                        Command="{Binding DataContext.OpenDeleteBookWindowCommand, RelativeSource={RelativeSource AncestorType=DataGrid}}" 
+                                        CommandParameter="{Binding}" 
+                                        Margin="5,0"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>

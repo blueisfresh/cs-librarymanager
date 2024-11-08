@@ -21,18 +21,18 @@
 
             <!-- Nachname -->
             <TextBlock Text="Nachname:" VerticalAlignment="Center" Margin="0,5"/>
-            <TextBox Grid.Column="1" Margin="5"/>
+            <TextBox Grid.Column="1" Margin="5" Text="{Binding NewStudent.LastName, UpdateSourceTrigger=PropertyChanged}"/>
 
             <!-- Vorname -->
             <TextBlock Text="Vorname:" Grid.Row="1" VerticalAlignment="Center" Margin="0,5"/>
-            <TextBox Grid.Row="1" Grid.Column="1" Margin="5"/>
+            <TextBox Grid.Row="1" Grid.Column="1" Margin="5" Text="{Binding NewStudent.FirstName, UpdateSourceTrigger=PropertyChanged}"/>
 
             <!-- Ausweisnummer -->
             <TextBlock Text="Ausweisnummer:" Grid.Row="2" VerticalAlignment="Center" Margin="0,5"/>
-            <TextBox Grid.Row="2" Grid.Column="1" Margin="5"/>
+            <TextBox Grid.Row="2" Grid.Column="1" Margin="5" Text="{Binding NewStudent.LibraryCardNum, UpdateSourceTrigger=PropertyChanged}"/>
         </Grid>
 
         <!-- Save Button -->
-        <Button Content="Speichern" Width="100" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,10,0,0" Grid.Row="3"/>
+        <Button Content="Speichern" Width="100" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,10,0,0" Command="{Binding SaveStudentCommand}"/>
     </Grid>
 </Window>

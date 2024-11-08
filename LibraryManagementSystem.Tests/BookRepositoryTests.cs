@@ -161,20 +161,4 @@ namespace LibraryManagementSystem.Tests
             Assert.IsTrue(allBooks.Exists(b => b.BookNum == "00025-2024"));
         }
     }
-
-
-
-    //public class Tests
-    //{
-    //    [SetUp]
-    //    public void Setup()
-    //    {
-    //    }
-
-    //    [Test]
-    //    public void Test1()
-    //    {
-    //        Assert.Pass();
-    //    }
-    //}
 }

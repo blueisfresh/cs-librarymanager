@@ -37,6 +37,7 @@ namespace LibraryManagementSystem.Data
             {
                 EnsureConnectionOpen();
 
+                // Check if the student already exists
                 string checkQuery = "SELECT COUNT(*) FROM TblStudent WHERE LibraryCardNum = @LibraryCardNum";
                 using (var checkCommand = new SqlCommand(checkQuery, _databaseConnection))
                 {
@@ -48,9 +49,14 @@ namespace LibraryManagementSystem.Data
                     }
                 }
 
-                string query = "INSERT INTO TblStudent (...) VALUES (...)";
+                // Insert new student
+                string query = "INSERT INTO TblStudent (LibraryCardNum, FirstName, LastName) VALUES (@LibraryCardNum, @FirstName, @LastName)";
                 using (var command = new SqlCommand(query, _databaseConnection))
                 {
+                    command.Parameters.AddWithValue("@LibraryCardNum", student.LibraryCardNum);
+                    command.Parameters.AddWithValue("@FirstName", student.FirstName);
+                    command.Parameters.AddWithValue("@LastName", student.LastName);
+
                     command.ExecuteNonQuery();
                 }
             }
@@ -64,6 +70,7 @@ namespace LibraryManagementSystem.Data
                 EnsureConnectionClosed();
             }
         }
+
 
 
         public Student GetStudentByLibraryCard(string libraryCard)
@@ -147,7 +154,8 @@ namespace LibraryManagementSystem.Data
             {
                 EnsureConnectionOpen();
 
-                string query = "SELECT * FROM TblStudent";
+                // Updated SQL query to exclude students with LibraryCardNum = 0
+                string query = "SELECT * FROM TblStudent WHERE LibraryCardNum <> 0";
                 using (var command = new SqlCommand(query, _databaseConnection))
                 {
                     using (var reader = command.ExecuteReader())
@@ -171,6 +179,7 @@ namespace LibraryManagementSystem.Data
 
             return students;
         }
+
 
         public List<Student> GetStudentByLastName(string lastName)
         {

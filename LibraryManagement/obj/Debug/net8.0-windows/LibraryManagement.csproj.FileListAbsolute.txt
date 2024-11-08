@@ -81,3 +81,5 @@ C:\Users\elias\Desktop\zweite Blockwoche\LibraryManagement\LibraryManagement\obj
 C:\Users\elias\Desktop\zweite Blockwoche\LibraryManagement\LibraryManagement\obj\Debug\net8.0-windows\LibraryManagement.genruntimeconfig.cache
 C:\Users\elias\Desktop\zweite Blockwoche\LibraryManagement\LibraryManagement\obj\Debug\net8.0-windows\ref\LibraryManagement.dll
 C:\Users\elias\Desktop\zweite Blockwoche\LibraryManagement\LibraryManagement\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+C:\Users\elias\Desktop\zweite Blockwoche\LibraryManagement\LibraryManagement\obj\Debug\net8.0-windows\Views\DeleteStudentWindow.baml
+C:\Users\elias\Desktop\zweite Blockwoche\LibraryManagement\LibraryManagement\obj\Debug\net8.0-windows\Views\DeleteStudentWindow.g.cs

@@ -80,16 +80,14 @@ namespace LibraryManagement.ViewModels
             if (SelectedBook == null) return;
 
             var addBooksWindow = new Views.AddBooksWindow();
-            var addBooksViewModel = new AddBooksViewModel(_bookRepository)
-            {
-                NewBook = SelectedBook // Prefill the window with the selected book
-            };
+            var addBooksViewModel = new AddBooksViewModel(_bookRepository, SelectedBook); // Pass SelectedBook for editing
 
             addBooksWindow.DataContext = addBooksViewModel;
             addBooksWindow.ShowDialog();
 
-            LoadBooks();  // Refresh books list after closing the edit window
+            LoadBooks(); // Refresh books list after closing the edit window
         }
+
 
         private void SearchBooks()
         {
